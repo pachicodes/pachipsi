@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachi Parra | Psicanálise e Escuta Intercultural para Mulheres</title>
+    <meta name="description" content="Espaço de escuta psicanalítica e sensibilidade intercultural para mulheres brasileiras que vivem ou viveram no exterior. Por Pachi Parra.">
+    <meta name="keywords" content="psicanálise para brasileiras no exterior, psicologia intercultural, mulheres brasileiras no exterior, au pair brasileira, brasileiras expatriadas, saúde emocional, pertencimento, identidade intercultural">
+    <meta name="author" content="Pachi Parra">
+    <meta name="theme-color" content="#2D2335">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pachi Parra | Psicanálise e Escuta Intercultural">
+    <meta property="og:description" content="Uma escuta especializada para mulheres brasileiras que vivem entre mundos e estão tentando compreender quem se tornaram no caminho.">
+    <meta property="og:image" content="assets/eu.png">
+    <meta property="og:url" content="https://pachiparra.com.br">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SVG Definitions for Subtle Icons -->
+    <svg style="display:none;">
+        <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </symbol>
+        <symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </symbol>
+    </svg>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header" id="top">
+        <div class="container header-container">
+            <a href="#hero" class="brand-logo" aria-label="Pachi Parra - Página Inicial">
+                <span class="brand-name">Pachi Parra</span>
+                <span class="brand-sub">Escuta Intercultural</span>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <svg class="icon"><use href="#icon-menu"></use></svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <button class="mobile-menu-close" id="mobileCloseBtn" aria-label="Fechar menu">
+                    <svg class="icon"><use href="#icon-close"></use></svg>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                    <li><a href="#escuta" class="nav-link">Escuta Intercultural</a></li>
+                    <li><a href="#para-quem" class="nav-link">Para quem é</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contato" class="nav-link nav-btn">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="tagline">Escuta em formação <span aria-hidden="true">/</span> reflexão intercultural</span>
+                    <h1 class="hero-title">
+                        <span class="name-highlight">Pachi Parra</span>
+                        <span class="title-sub">Psicanálise e escuta intercultural para mulheres brasileiras entre mundos.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Um espaço seguro e refinado para acolher as transformações profundas, o silêncio da distância e as contradições de quem aprendeu a habitar mais de uma cultura.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#escuta" class="btn btn-primary">Conheça meu trabalho</a>
+                        <a href="#contato" class="btn btn-secondary">Entre em contato</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="image-wrapper">
+                        <img src="assets/eu.png" alt="Retrato de Pachi Parra em uma paisagem urbana" class="hero-img" loading="eager">
+                        <div class="image-accent-border"></div>
+                    </div>
+                    <span class="hero-image-caption">Pachi Parra <span aria-hidden="true">·</span> São Paulo / New York</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. IDENTIFICAÇÃO -->
+        <section class="identification-section" id="identificacao">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Pontos de Encontro</span>
+                    <h2 class="section-title">Talvez você tenha chegado até aqui porque...</h2>
+                </div>
+
+                <div class="editorial-cards-grid">
+                    <article class="editorial-card">
+                        <span class="card-number">01</span>
+                        <p class="card-text">
+                            Você construiu uma vida fora, mas ainda sente falta de uma parte de si que parecia existir apenas em português.
+                        </p>
+                    </article>
+
+                    <article class="editorial-card">
+                        <span class="card-number">02</span>
+                        <p class="card-text">
+                            Você aprendeu a funcionar com extrema eficiência em outra cultura, mas nem sempre sente que pertence a ela por inteiro.
+                        </p>
+                    </article>
+
+                    <article class="editorial-card">
+                        <span class="card-number">03</span>
+                        <p class="card-text">
+                            Você voltou para o Brasil e percebeu que mudou demais para simplesmente reencontrar a pessoa que era antes de partir.
+                        </p>
+                    </article>
+
+                    <article class="editorial-card">
+                        <span class="card-number">04</span>
+                        <p class="card-text">
+                            Você passou anos sustentando exigências e cuidando de tudo ao redor, e agora tenta escutar o que você realmente deseja.
+                        </p>
+                    </article>
+
+                    <article class="editorial-card">
+                        <span class="card-number">05</span>
+                        <p class="card-text">
+                            Você habita um lugar incerto entre ficar, voltar ou simplesmente parar de precisar escolher todos os dias.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MUDAR DE PAÍS NÃO É APENAS MUDAR DE ENDEREÇO -->
+        <section class="concept-section" id="escuta">
+            <div class="container concept-grid">
+                <div class="concept-image-container">
+                    <img src="assets/intercultural_space.png" alt="Espaço arquitetônico minimalista com luz natural e janela para o horizonte" class="concept-img" loading="lazy">
+                </div>
+                <div class="concept-content">
+                    <span class="section-subtitle">Dimensão Subjetiva</span>
+                    <h2 class="section-title">Mudar de país não é apenas mudar de endereço.</h2>
+                    <div class="rich-text">
+                        <p>
+                            A travessia internacional reverbera em camadas sutis e profundas da psique. Trata-se de reorganizar os pontos de referência que sustentavam a identidade, a autonomia e as certezas mais antigas.
+                        </p>
+                        <p>
+                            Uma mudança de país atravessa inevitavelmente:
+                        </p>
+                        <ul class="reflection-list">
+                            <li>A relação com a própria língua materna e os afetos inomináveis em outro idioma</li>
+                            <li>A sensação de pertencimento e o silêncio da solidão geográfica</li>
+                            <li>A reconfiguração da autoestima, dos papéis familiares e das escolhas profissionais</li>
+                            <li>O conflito entre a mulher que você era no Brasil e quem precisou se tornar longe dele</li>
+                            <li>A saudade sem idealização e a estranheza diante do retorno</li>
+                        </ul>
+                        <p class="highlight-quote">
+                            A experiência migratória não é um dilema a ser "consertado", mas um terreno complexo que mobiliza perguntas fundamentais sobre quem somos quando os cenários habituais mudam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. A MULHER POR TRÁS DA MIGRAÇÃO -->
+        <section class="woman-center-section">
+            <div class="container">
+                <div class="quote-banner">
+                    <span class="section-subtitle">O Centro da Análise</span>
+                    <h2 class="banner-title">A migração é parte da história.<br>Mas não é toda a história.</h2>
+                    <p class="banner-lead">
+                        O trabalho clínico não se reduz ao fato geográfico de morar fora. O foco da escuta é a mulher singular que atravessa essa vivência — com suas memórias, seus desejos inconscientes, suas contradições e suas buscas.
+                    </p>
+                    <div class="separator-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PARA QUEM É ESSA ESCUTA -->
+        <section class="audience-section" id="para-quem">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Perfis & Vivências</span>
+                    <h2 class="section-title">Para quem é essa escuta</h2>
+                    <p class="section-intro">
+                        Uma escuta dedicada a mulheres brasileiras em diferentes momentos de travessia e reorganização de vida.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="audience-card">
+                        <h3 class="card-title">Au pairs (atuais ou antigas)</h3>
+                        <p class="card-description">
+                            Mulheres que deixaram o Brasil jovens para viver uma experiência que acabou transformando a percepção de si, da autonomia e do próprio futuro de forma muito mais profunda do que imaginavam.
+                        </p>
+                    </div>
+
+                    <div class="audience-card">
+                        <h3 class="card-title">Mulheres expatriadas & imigrantes</h3>
+                        <p class="card-description">
+                            Para quem estabeleceu a vida no exterior e se vê diante de questões sobre pertencimento, maturidade, distanciamento familiar e as nuances de viver continuamente entre duas realidades.
+                        </p>
+                    </div>
+
+                    <div class="audience-card">
+                        <h3 class="card-title">Profissionais brasileiras no exterior</h3>
+                        <p class="card-description">
+                            Para quem construiu e conquistou seu espaço no mercado internacional, mas continua se perguntando sobre o custo invisível dessa autonomia e os significados da própria carreira.
+                        </p>
+                    </div>
+
+                    <div class="audience-card">
+                        <h3 class="card-title">Relacionamentos interculturais</h3>
+                        <p class="card-description">
+                            Para mulheres que negociam afeto, valores, planos e expectativas em parcerias atravessadas por diferentes repertórios culturais e linguísticos.
+                        </p>
+                    </div>
+
+                    <div class="audience-card">
+                        <h3 class="card-title">Maternidade longe da rede</h3>
+                        <p class="card-description">
+                            Para quem atravessa a experiência de criar filhos sem o amparo direto da rede familiar brasileira, desdobrando novos sentidos sobre cuidado, herança e identidade.
+                        </p>
+                    </div>
+
+                    <div class="audience-card">
+                        <h3 class="card-title">Quem está entre ficar e voltar</h3>
+                        <p class="card-description">
+                            Para mulheres em momentos de transição ou retorno ao Brasil, encarando a sensação paradoxal de não pertencer por completo nem ao lugar de origem, nem ao país em que vivem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SOBRE PACHI -->
+        <section class="about-section" id="sobre">
+            <div class="container about-grid">
+                <div class="about-content">
+                    <span class="section-subtitle">Trajetória Pessoal</span>
+                    <h2 class="section-title">Antes de escutar outras mulheres, eu também precisei atravessar fronteiras.</h2>
+                    <div class="rich-text">
+                        <p>
+                            Sou brasileira e vivi cerca de 10 anos nos Estados Unidos. Minha trajetória fora do país começou com a experiência de ter sido <em>au pair</em> — um período fundamental para minha compreensão de autonomia, adaptação e dos deslocamentos emocionais que ocorrem ao reconstruir a rotina longe de casa.
+                        </p>
+                        <p>
+                            A escuta intercultural que proponho não nasce apenas do referencial teórico e psicanalítico, mas da vivência concreta das perplexidades, desafios e reaprendizados que o viver entre culturas mobiliza.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-accent-card">
+                    <blockquote class="editorial-quote">
+                        "Escutar o que se diz entrelinhas é acolher também tudo aquilo que a nova língua ainda não consegue traduzir."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FORMAÇÃO E ABORDAGEM -->
+        <section class="education-section" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Compromisso Ético & Estudos</span>
+                    <h2 class="section-title">Formação e Percurso Teórico</h2>
+                    <p class="section-intro">
+                        Uma prática em contínua construção, sustentada pelo rigor teórico da psicanálise e pela pesquisa voltada às especificidades do sujeito intercultural.
+                    </p>
+                </div>
+
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <span class="edu-status">Em Formação</span>
+                        <h3 class="edu-title">Formação em Psicanálise</h3>
+                        <p class="edu-desc">Estudo continuado dos fundamentos da teoria e clínica psicanalítica, com foco no inconsciente, na palavra e nas formações do desejo.</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="edu-status">Pesquisa Ativa</span>
+                        <h3 class="edu-title">Psicologia Intercultural & Migração</h3>
+                        <p class="edu-desc">Investigação sobre os impactos da transculturação, luto migratório, pertencimento e processos de construção de identidade no exterior.</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="edu-status">Foco Clínico</span>
+                        <h3 class="edu-title">Subjetividade Feminina</h3>
+                        <p class="edu-desc">Estudos dedicados aos atravessamentos de gênero, autonomia, maternidade e os papéis sociais impostos à mulher contemporânea.</p>
+                    </div>
+                </div>
+
+                <!-- ÁREA EDITÁVEL PARA FUTURAS CERTIFICAÇÕES -->
+                <div class="editable-certifications-notice">
+                    <p><em>Transparência ética:</em> Pachi Parra encontra-se em etapa de formação teórico-clínica. Este espaço é preparado para constante atualização de suas credenciais, supervisões e filiações institucionais conforme a conclusão de cada etapa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. UMA ESCUTA EM PORTUGUÊS -->
+        <section class="language-section">
+            <div class="container">
+                <div class="language-box">
+                    <span class="section-subtitle">Língua Materna & Afeto</span>
+                    <h2 class="section-title">Uma escuta na sua língua de origem</h2>
+                    <p class="language-text">
+                        Você pode falar outra língua no trabalho, nas compras e nas relações sociais diárias. No entanto, existe algo singular em poder nomear angústias, lembranças de infância e nuances emocionais na língua em que suas primeiras referências foram construídas.
+                    </p>
+                    <p class="language-text">
+                        Poder analisar-se em português estando no exterior não é apenas uma questão de conforto idiomático; é a oportunidade de acessar afetos que muitas vezes permanecem intocados na tradução do dia a dia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. COMO FUNCIONA -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Passo a Passo</span>
+                    <h2 class="section-title">Como funciona o primeiro contato</h2>
+                </div>
+
+                <div class="process-steps">
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-number">01</span>
+                            <h3 class="step-title">Primeiro Contato</h3>
+                        </div>
+                        <p class="step-text">Você envia uma mensagem inicial contando brevemente o momento de vida que está atravessando e o que busca neste espaço.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-number">02</span>
+                            <h3 class="step-title">Conversamos</h3>
+                        </div>
+                        <p class="step-text">Alinhamos uma conversa inicial para compreender se esta proposta de escuta é adequada para o seu momento singular.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-header">
+                            <span class="step-number">03</span>
+                            <h3 class="step-title">Construímos o Caminho</h3>
+                        </div>
+                        <p class="step-text">Definimos os combinados de forma transparente, dando tempo e espaço singular ao processo de escuta.</p>
+                    </div>
+                </div>
+
+                <!-- ÁREA EDITÁVEL PARA INFORMAÇÕES PRÁTICAS FUTURAS (VALORES, FREQUÊNCIA, MODALIDADE) -->
+                <!-- [ÁREA EDITÁVEL: INSERIR DETALHES DE FREQUÊNCIA E ATENDIMENTO QUANDO APLICÁVEL] -->
+            </div>
+        </section>
+
+        <!-- 10. FAQ SECTION -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Dúvidas Frequentes</span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Você atende brasileiras que vivem em qualquer país?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>A possibilidade de atendimento depende do país onde você vive e das regras locais aplicáveis. No primeiro contato, conversamos sobre essa questão e sobre os formatos disponíveis para o seu contexto.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>As sessões são exclusivamente online?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>A proposta é realizar os encontros online, em uma plataforma adequada e com atenção à privacidade. Os detalhes do formato são combinados no primeiro contato, de acordo com o seu contexto.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Você atende au pairs atuais ou antigas?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Essa experiência faz parte do campo de interesse da Pachi. No primeiro contato, vocês conversam sobre o momento que você está vivendo e sobre se essa proposta de escuta faz sentido para você.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Preciso estar passando por um momento de crise para procurar análise?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Não necessariamente. Algumas mulheres procuram uma escuta em momentos de crise; outras chegam quando percebem perguntas persistentes sobre escolhas, vínculos, identidade ou desejo. O primeiro contato ajuda a entender se essa proposta é adequada para você.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>E se eu estiver pensando em voltar para o Brasil ou se já tiver voltado?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>O processo de repatriação ou a dúvida entre permanecer e retornar são temas muito ricos. O retorno ao Brasil costuma trazer um sentimento de 'estranhamento no próprio ninho' que merece ser escutado e elaborado com cuidado.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Posso fazer análise em português mesmo morando há muitos anos fora?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Essa é uma possibilidade. Falar em português pode abrir nuances de memória e afeto, mas cada pessoa encontra sua própria relação com a língua e com o processo de escuta.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Qual é a diferença entre psicoterapia tradicional e psicanálise?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>São propostas diferentes, com referências e objetivos próprios. A psicanálise privilegia a palavra e a investigação da singularidade, sem prometer respostas prontas. No primeiro contato, Pachi pode explicar melhor como está construindo sua formação e sua proposta de escuta.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Como funciona o primeiro contato?</span>
+                            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Você pode enviar uma mensagem pelo formulário ou e-mail. A partir disso, conversamos brevemente para entender suas necessidades e alinhar os próximos passos com transparência.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. CTA FINAL & CONTATO -->
+        <section class="final-cta-section" id="contato">
+            <div class="container">
+                <div class="final-card">
+                    <span class="section-subtitle">Primeiro Passo</span>
+                    <h2 class="final-title">
+                        Talvez você não esteja procurando respostas prontas.<br>
+                        Talvez esteja procurando um lugar onde possa finalmente fazer algumas perguntas.
+                    </h2>
+                    
+                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); showContactConfirmation();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Seu nome</label>
+                                <input type="text" id="name" required placeholder="Como prefere ser chamada?">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail para contato</label>
+                                <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Onde você vive atualmente? (País / Cidade)</label>
+                            <input type="text" id="location" placeholder="Ex: Estados Unidos, Portugal, Brasil...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Sua mensagem (opcional)</label>
+                            <textarea id="message" rows="4" placeholder="Sinta-se à vontade para compartilhar um breve contexto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Quero conversar</button>
+                    </form>
+
+                    <div id="formSuccessMessage" class="form-success-msg" style="display: none;">
+                        <p class="success-title">Mensagem enviada com carinho.</p>
+                        <p class="success-desc">Obrigada pelo contato, Pachi retornará sua mensagem em breve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="brand-name">Pachi Parra</span>
+                <p class="footer-tagline">Psicanálise e Escuta Intercultural para Mulheres</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#escuta">Escuta Intercultural</a>
+                <a href="#para-quem">Para quem é</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Pachi Parra. Todos os direitos reservados.</p>
+                <p class="disclaimer">Espaço em constante formação e aprimoramento teórico-clínico.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
