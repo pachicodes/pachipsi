@@ -1784,6 +1784,14 @@ details[open] .faq-question .icon.chevron {
     border-top: 3px solid var(--color-gold-subtle);
 }
 
+.services-page-section .service-card {
+    border-color: var(--color-gold-subtle);
+}
+
+.services-page-section .service-card:hover {
+    border-color: var(--color-gold-light);
+}
+
 .service-badge {
     border: 1px solid rgba(154, 127, 168, 0.36);
     background-color: rgba(116, 98, 127, 0.16);
