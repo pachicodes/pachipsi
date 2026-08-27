@@ -1426,6 +1426,26 @@ details[open] .faq-question .icon.chevron {
     background-color: var(--color-bg-light);
 }
 
+.services-page-section {
+    padding-top: 10rem;
+}
+
+.services-preview-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.services-preview-section .section-header {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-preview-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
