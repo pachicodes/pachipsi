@@ -1116,7 +1116,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .woman-center-section {
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-sage-deep);
 }
 
 .audience-section,
@@ -1150,7 +1150,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .narrative-placeholder-box {
-    background-color: rgba(107, 118, 91, 0.2);
+    background-color: rgba(113, 128, 108, 0.24);
     border-color: var(--color-sage-subtle);
 }
 
@@ -1159,7 +1159,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .about-accent-card {
-    background-color: var(--color-purple-deep);
+    background-color: var(--color-sage-deep);
 }
 
 .language-section {
