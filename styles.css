@@ -215,6 +215,10 @@ html {
     overflow-x: hidden;
 }
 
+section[id] {
+    scroll-margin-top: 7rem;
+}
+
 body {
     font-family: var(--font-sans);
     line-height: 1.7;
