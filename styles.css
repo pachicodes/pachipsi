@@ -1047,7 +1047,7 @@ details[open] .faq-question .icon.chevron {
 
 .title-sub,
 .hero-description {
-    color: var(--color-lavender-soft);
+    color: var(--color-text-inverse);
 }
 
 .btn-primary {
