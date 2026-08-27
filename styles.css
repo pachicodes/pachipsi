@@ -1260,13 +1260,16 @@ details[open] .faq-question .icon.chevron {
     background: linear-gradient(115deg, var(--color-sage-deep) 0%, var(--color-sage-subtle) 58%, var(--color-bg-alt) 100%);
 }
 
-.concept-section .section-title,
-.concept-section .rich-text p,
-.concept-section .reflection-list li,
-.concept-section .highlight-quote,
 .language-section .section-title,
 .language-section .language-text {
     color: var(--color-text-inverse);
+}
+
+.concept-section .section-title,
+.concept-section .rich-text p,
+.concept-section .reflection-list li,
+.concept-section .highlight-quote {
+    color: var(--color-text-main);
 }
 
 .reflection-list li::before {
