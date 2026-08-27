@@ -1178,6 +1178,786 @@ details[open] .faq-question .icon.chevron {
     }
 }
 
+/* --- DARK VINTAGE PSYCHOANALYTIC EDITORIAL SYSTEM --- */
+:root {
+    --ink: #17131b;
+    --aubergine: #251c2b;
+    --aubergine-soft: #33263a;
+    --ivory: #e7dcc9;
+    --ivory-soft: #cbbca7;
+    --lavender-dust: #a28da8;
+    --moss: #596650;
+    --bronze: #9a7656;
+    --line-ink: rgba(231, 220, 201, 0.2);
+    --line-ivory: rgba(37, 28, 43, 0.2);
+    --editorial-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html,
+body {
+    background-color: var(--ink);
+    color: var(--ivory);
+}
+
+body {
+    background-image: radial-gradient(rgba(231, 220, 201, 0.055) 0.7px, transparent 0.7px);
+    background-size: 7px 7px;
+}
+
+.site-header {
+    background: rgba(23, 19, 27, 0.82);
+    border-bottom: 1px solid var(--line-ink);
+    backdrop-filter: blur(14px);
+}
+
+.brand-name,
+.mobile-menu-toggle,
+.mobile-menu-close {
+    color: var(--ivory);
+}
+
+.brand-sub,
+.section-subtitle,
+.hero-content .tagline,
+.card-number,
+.step-number,
+.edu-status {
+    color: var(--bronze);
+}
+
+.nav-link {
+    color: var(--ivory-soft);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--ivory);
+}
+
+.nav-btn {
+    color: var(--ivory) !important;
+    border-color: var(--bronze);
+}
+
+.nav-btn:hover {
+    background-color: var(--bronze);
+    color: var(--ink) !important;
+}
+
+.hero-section {
+    min-height: min(860px, 100vh);
+    padding: 9rem 0 5rem;
+    background:
+        radial-gradient(circle at 72% 30%, rgba(162, 141, 168, 0.15), transparent 22rem),
+        linear-gradient(120deg, var(--ink) 0%, var(--aubergine) 100%);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 8rem 7% auto auto;
+    width: clamp(7rem, 14vw, 13rem);
+    aspect-ratio: 1;
+    border: 1px solid rgba(162, 141, 168, 0.25);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(162, 141, 168, 0.08), 0 0 0 2.5rem transparent;
+    pointer-events: none;
+}
+
+.hero-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.8fr);
+    gap: clamp(3rem, 9vw, 9rem);
+}
+
+.hero-content {
+    max-width: 610px;
+}
+
+.hero-content::before {
+    content: 'I  /  V  ·  UM CADERNO DE TRAVESSIAS';
+    color: var(--lavender-dust);
+    letter-spacing: 0.2em;
+}
+
+.hero-title {
+    max-width: 10ch;
+    margin-bottom: 2rem;
+    font-size: clamp(3.4rem, 7vw, 7.2rem);
+    line-height: 0.96;
+    letter-spacing: 0;
+}
+
+.name-highlight {
+    color: var(--ivory);
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.name-highlight em {
+    color: var(--lavender-dust);
+    font-weight: 400;
+}
+
+.title-sub {
+    display: none;
+}
+
+.hero-description {
+    max-width: 29rem;
+    color: var(--ivory-soft);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.hero-description strong {
+    color: var(--ivory);
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.hero-actions {
+    margin-top: 2rem;
+}
+
+.btn {
+    border-radius: 0;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: var(--bronze);
+    border-color: var(--bronze);
+    color: var(--ink);
+}
+
+.btn-primary:hover {
+    background: var(--ivory);
+    border-color: var(--ivory);
+}
+
+.btn-secondary {
+    color: var(--ivory);
+    border-color: var(--line-ink);
+}
+
+.btn-secondary:hover {
+    background: var(--aubergine-soft);
+    border-color: var(--lavender-dust);
+}
+
+.hero-media {
+    align-self: center;
+}
+
+.image-wrapper {
+    border: 1px solid var(--line-ink);
+    box-shadow: 1.1rem 1.1rem 0 rgba(89, 102, 80, 0.5);
+}
+
+.hero-img {
+    aspect-ratio: 4 / 5;
+    filter: saturate(0.72) sepia(0.14) contrast(1.04);
+}
+
+.image-accent-border {
+    inset: 1rem;
+    border-color: rgba(231, 220, 201, 0.48);
+}
+
+.hero-image-caption {
+    color: var(--ivory-soft);
+}
+
+.identification-section,
+.about-section,
+.faq-section {
+    background-color: var(--ink);
+    color: var(--ivory);
+}
+
+.identification-section {
+    padding: clamp(6rem, 12vw, 11rem) 0;
+}
+
+.identification-section::before,
+.audience-section::before,
+.education-section::before,
+.process-section::before,
+.services-preview-section::before,
+.services-section::before {
+    border-top-color: var(--line-ink);
+}
+
+.identification-section .section-header,
+.audience-section .section-header,
+.education-section .section-header,
+.process-section .section-header {
+    max-width: 30rem;
+}
+
+.section-title,
+.identification-section .section-title,
+.audience-section .section-title,
+.education-section .section-title,
+.process-section .section-title,
+.faq-section .section-title {
+    color: var(--ivory);
+    font-size: clamp(2.2rem, 4vw, 4.3rem);
+    line-height: 1.02;
+    letter-spacing: 0;
+}
+
+.section-intro,
+.card-description,
+.edu-desc,
+.step-text,
+.rich-text p {
+    color: var(--ivory-soft);
+}
+
+.editorial-cards-grid {
+    grid-template-columns: repeat(5, 1fr);
+    border-top-color: var(--line-ink);
+    border-bottom-color: var(--line-ink);
+}
+
+.editorial-card {
+    min-height: 18rem;
+    padding: 2rem 1.5rem 2.5rem;
+    border-right-color: var(--line-ink);
+}
+
+.editorial-card:hover {
+    background-color: rgba(162, 141, 168, 0.08);
+}
+
+.card-text {
+    max-width: 13rem;
+    color: var(--ivory);
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.concept-section {
+    padding: clamp(6rem, 12vw, 11rem) 0;
+    background-color: var(--ivory);
+    color: var(--aubergine);
+}
+
+.concept-section .section-title,
+.concept-section .rich-text p,
+.concept-section .reflection-list li,
+.concept-section .highlight-quote {
+    color: var(--aubergine);
+}
+
+.concept-section .section-subtitle {
+    color: var(--bronze);
+}
+
+.concept-grid {
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+    gap: clamp(3rem, 9vw, 9rem);
+}
+
+.concept-image-container {
+    display: none;
+}
+
+.concept-content {
+    max-width: 48rem;
+}
+
+.concept-section .section-title {
+    max-width: 9ch;
+    font-size: clamp(3rem, 6vw, 6.5rem);
+}
+
+.concept-section .rich-text {
+    max-width: 34rem;
+}
+
+.concept-section .reflection-list {
+    border-top: 1px solid var(--line-ivory);
+    border-bottom: 1px solid var(--line-ivory);
+    padding: 1.2rem 0;
+}
+
+.concept-section .reflection-list li {
+    padding-left: 1.5rem;
+}
+
+.concept-section .reflection-list li::before {
+    background-color: var(--bronze);
+    border-radius: 0;
+}
+
+.concept-section .highlight-quote {
+    border-left-color: var(--bronze);
+}
+
+.woman-center-section {
+    padding: clamp(7rem, 14vw, 13rem) 0;
+    background-color: var(--aubergine);
+    text-align: left;
+}
+
+.quote-banner {
+    max-width: 58rem;
+    margin-left: 16%;
+}
+
+.banner-title {
+    max-width: 12ch;
+    color: var(--ivory);
+    font-size: clamp(2.8rem, 6vw, 6rem);
+    line-height: 0.98;
+}
+
+.banner-lead {
+    max-width: 34rem;
+    color: var(--ivory-soft);
+}
+
+.separator-line {
+    margin-left: 0;
+    background-color: var(--bronze);
+}
+
+.services-preview-section,
+.services-section {
+    padding: clamp(6rem, 12vw, 11rem) 0;
+    background-color: var(--moss);
+}
+
+.services-preview-section .section-title,
+.services-section .section-title,
+.services-page-section .section-title {
+    color: var(--ivory);
+}
+
+.services-preview-section .section-intro,
+.services-page-section .section-intro {
+    color: var(--ivory-soft);
+}
+
+.services-preview-section .section-header {
+    max-width: 32rem;
+    margin-left: 0;
+    text-align: left;
+}
+
+.editorial-services-list {
+    max-width: 52rem;
+    margin-top: 4rem;
+    margin-left: auto;
+}
+
+.editorial-service-link {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.4rem 0;
+    border-top: 1px solid rgba(231, 220, 201, 0.3);
+    color: var(--ivory);
+    transition: padding 350ms var(--editorial-ease), color 250ms ease;
+}
+
+.editorial-service-link:last-child {
+    border-bottom: 1px solid rgba(231, 220, 201, 0.3);
+}
+
+.editorial-service-link:hover {
+    padding-left: 1rem;
+    color: var(--ivory);
+}
+
+.editorial-service-number {
+    color: var(--bronze);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+}
+
+.editorial-service-link strong,
+.editorial-service-link em {
+    display: block;
+}
+
+.editorial-service-link strong {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.8rem);
+    font-weight: 400;
+}
+
+.editorial-service-link em {
+    margin-top: 0.2rem;
+    color: var(--ivory-soft);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+}
+
+.editorial-service-arrow {
+    color: var(--bronze);
+    font-size: 1.5rem;
+}
+
+.audience-section,
+.education-section,
+.process-section,
+.final-cta-section {
+    background-color: var(--ink);
+    color: var(--ivory);
+}
+
+.cards-grid,
+.education-grid,
+.process-steps {
+    gap: 0;
+}
+
+.audience-card,
+.edu-card,
+.step-card {
+    background: transparent;
+    border-color: var(--line-ink);
+}
+
+.audience-card:hover {
+    background-color: rgba(162, 141, 168, 0.08);
+}
+
+.audience-card .card-title,
+.edu-title,
+.step-title {
+    color: var(--ivory);
+}
+
+.language-section {
+    background: var(--aubergine-soft);
+    border-color: var(--line-ink);
+}
+
+.language-box {
+    max-width: 52rem;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.language-section .section-title,
+.language-section .language-text {
+    color: var(--ivory);
+}
+
+.language-section .language-text {
+    color: var(--ivory-soft);
+}
+
+.faq-section {
+    background-color: var(--ivory);
+}
+
+.faq-section .section-title,
+.faq-question,
+.faq-answer {
+    color: var(--aubergine);
+}
+
+.faq-item {
+    background-color: transparent;
+    border-color: var(--line-ivory);
+}
+
+.faq-question:hover {
+    background-color: rgba(37, 28, 43, 0.06);
+}
+
+.final-cta-section {
+    background-color: var(--ink);
+}
+
+.final-card {
+    max-width: 58rem;
+    padding: clamp(3rem, 8vw, 7rem) clamp(1.5rem, 7vw, 6rem);
+    background-color: var(--aubergine);
+    border-color: var(--line-ink);
+    box-shadow: none;
+    text-align: left;
+}
+
+.final-title {
+    max-width: 15ch;
+    color: var(--ivory);
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    line-height: 1;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+    color: var(--ivory);
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    border-color: var(--line-ink);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: rgba(231, 220, 201, 0.06);
+    border-color: var(--lavender-dust);
+    box-shadow: 0 0 0 3px rgba(162, 141, 168, 0.14);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(203, 188, 167, 0.6);
+}
+
+.site-footer {
+    background-color: var(--aubergine);
+    border-top: 1px solid var(--line-ink);
+}
+
+.footer-tagline,
+.footer-links a {
+    color: var(--ivory-soft);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 8rem;
+    }
+
+    .hero-grid,
+    .concept-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-title {
+        max-width: 8ch;
+        font-size: clamp(3.4rem, 16vw, 5.4rem);
+    }
+
+    .hero-media {
+        width: calc(100% - 1rem);
+        margin-left: auto;
+    }
+
+    .editorial-cards-grid {
+        grid-template-columns: 1fr;
+        border-bottom: 0;
+    }
+
+    .editorial-card {
+        min-height: auto;
+        padding: 1.5rem 0 2rem;
+        border-right: 0;
+        border-bottom: 1px solid var(--line-ink);
+    }
+
+    .card-text {
+        max-width: 19rem;
+        margin-top: 1.5rem;
+    }
+
+    .quote-banner,
+    .language-box {
+        margin-left: 0;
+    }
+
+    .concept-section .section-title {
+        max-width: 11ch;
+    }
+
+    .editorial-services-list {
+        margin-top: 3rem;
+    }
+
+    .editorial-service-link {
+        grid-template-columns: 2rem 1fr auto;
+        gap: 0.8rem;
+    }
+
+    .editorial-service-link strong {
+        font-size: 1.7rem;
+    }
+
+    .editorial-service-link em {
+        font-size: 0.9rem;
+    }
+
+    .final-card {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* --- SERVICE PAGE EDITORIAL ENTRIES --- */
+.services-page-section {
+    min-height: 100vh;
+    padding-top: clamp(9rem, 14vw, 13rem);
+}
+
+.services-page-section .section-header {
+    max-width: 48rem;
+    margin-left: 0;
+    text-align: left;
+}
+
+.services-page-section .section-title {
+    max-width: 12ch;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+}
+
+.services-page-section .services-grid {
+    display: block;
+    margin-top: clamp(4rem, 8vw, 8rem);
+}
+
+.services-page-section .service-card,
+.services-page-section .service-card:nth-child(2),
+.services-page-section .service-card:nth-child(3),
+.services-page-section .service-card:nth-child(4) {
+    display: grid;
+    grid-template-columns: minmax(3rem, 0.18fr) minmax(0, 1fr);
+    column-gap: clamp(1.5rem, 5vw, 5rem);
+    width: 100%;
+    margin: 0;
+    padding: clamp(2.5rem, 5vw, 5rem) 0;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line-ink);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.services-page-section .service-card:last-child {
+    border-bottom: 1px solid var(--line-ink);
+}
+
+.services-page-section .service-level {
+    position: static;
+    grid-row: 1 / span 8;
+    color: var(--bronze);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+}
+
+.services-page-section .service-badge,
+.services-page-section .service-card-title,
+.services-page-section .service-card-desc,
+.services-page-section .service-list,
+.services-page-section .service-tool-note,
+.services-page-section .service-boundary,
+.services-page-section .service-subsection,
+.services-page-section .psycho-pillars {
+    grid-column: 2;
+}
+
+.services-page-section .service-badge {
+    justify-self: start;
+    padding: 0;
+    margin-bottom: 1.2rem;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: var(--lavender-dust);
+}
+
+.services-page-section .service-card-title {
+    max-width: 14ch;
+    color: var(--ivory);
+    font-size: clamp(2.2rem, 4vw, 4.3rem);
+    line-height: 0.98;
+}
+
+.services-page-section .service-card-desc,
+.services-page-section .service-list li,
+.services-page-section .service-tool-note,
+.services-page-section .service-boundary,
+.services-page-section .service-subsection p,
+.services-page-section .psycho-pillar span {
+    color: var(--ivory-soft);
+}
+
+.services-page-section .service-list,
+.services-page-section .service-tool-note,
+.services-page-section .service-boundary,
+.services-page-section .service-subsection,
+.services-page-section .psycho-pillars {
+    border-color: var(--line-ink);
+}
+
+.services-page-section .service-list li::before {
+    color: var(--bronze);
+}
+
+.services-page-section .service-tool-note strong,
+.services-page-section .service-boundary strong,
+.services-page-section .service-subsection h3,
+.services-page-section .psycho-pillar strong {
+    color: var(--ivory);
+}
+
+.services-page-section .choice-section {
+    margin-top: clamp(5rem, 10vw, 10rem);
+    padding-top: clamp(3rem, 6vw, 6rem);
+    border-top-color: var(--line-ink);
+}
+
+.services-page-section .choice-section .section-header {
+    max-width: 34rem;
+}
+
+.services-page-section .choice-item {
+    border-top-color: var(--bronze);
+}
+
+.services-page-section .choice-question,
+.services-page-section .choice-item p {
+    color: var(--ivory-soft);
+}
+
+.services-page-section .choice-item h3 {
+    color: var(--ivory);
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+@media (max-width: 768px) {
+    .services-page-section .service-card,
+    .services-page-section .service-card:nth-child(2),
+    .services-page-section .service-card:nth-child(3),
+    .services-page-section .service-card:nth-child(4) {
+        grid-template-columns: 2rem 1fr;
+        column-gap: 1rem;
+    }
+
+    .services-page-section .service-card-title {
+        max-width: 11ch;
+    }
+
+    .services-page-section .psycho-pillars {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .editorial-service-link:hover,
+    .image-wrapper:hover,
+    .image-wrapper:focus-within {
+        padding-left: 0;
+        transform: none;
+    }
+}
+
 /* --- INSPO PALETTE OVERRIDES --- */
 .site-header {
     background-color: rgba(243, 238, 230, 0.94);
@@ -2086,6 +2866,526 @@ details[open] .faq-question .icon.chevron {
     .psycho-pillar:first-child {
         border-top: 0;
         padding-top: 0;
+    }
+}
+
+/* --- FINAL ART DIRECTION OVERRIDE --- */
+:root {
+    --ink: #17131b;
+    --aubergine: #251c2b;
+    --aubergine-soft: #33263a;
+    --ivory: #e7dcc9;
+    --ivory-soft: #cbbca7;
+    --lavender-dust: #a28da8;
+    --moss: #596650;
+    --bronze: #9a7656;
+    --line-ink: rgba(231, 220, 201, 0.2);
+    --line-ivory: rgba(37, 28, 43, 0.2);
+}
+
+html,
+body {
+    background: var(--ink);
+    color: var(--ivory);
+}
+
+body {
+    background-image: radial-gradient(rgba(231, 220, 201, 0.05) 0.7px, transparent 0.7px);
+    background-size: 7px 7px;
+}
+
+.site-header {
+    background: rgba(23, 19, 27, 0.86);
+    border-bottom-color: var(--line-ink);
+}
+
+.brand-name,
+.mobile-menu-toggle,
+.mobile-menu-close,
+.nav-link:hover,
+.nav-link.active {
+    color: var(--ivory);
+}
+
+.nav-link,
+.hero-image-caption,
+.footer-tagline,
+.footer-links a {
+    color: var(--ivory-soft);
+}
+
+.nav-btn {
+    color: var(--ivory) !important;
+    border-color: var(--bronze);
+}
+
+.nav-btn:hover {
+    background: var(--bronze);
+    color: var(--ink) !important;
+}
+
+.hero-section {
+    min-height: min(860px, 100vh);
+    padding: 9rem 0 5rem;
+    background:
+        radial-gradient(circle at 72% 30%, rgba(162, 141, 168, 0.14), transparent 22rem),
+        linear-gradient(120deg, var(--ink) 0%, var(--aubergine) 100%);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 7rem;
+    right: 7%;
+    width: clamp(7rem, 14vw, 13rem);
+    aspect-ratio: 1;
+    border: 1px solid rgba(162, 141, 168, 0.25);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.8fr);
+    gap: clamp(3rem, 9vw, 9rem);
+}
+
+.hero-content {
+    max-width: 610px;
+}
+
+.hero-content::before {
+    content: 'I  /  V  -  UM CADERNO DE TRAVESSIAS';
+    color: var(--lavender-dust);
+}
+
+.hero-title {
+    max-width: 10ch;
+    font-size: clamp(3.4rem, 7vw, 7.2rem);
+    line-height: 0.96;
+    letter-spacing: 0;
+}
+
+.name-highlight {
+    color: var(--ivory);
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.name-highlight em {
+    color: var(--lavender-dust);
+}
+
+.title-sub {
+    display: none;
+}
+
+.hero-description {
+    max-width: 29rem;
+    color: var(--ivory-soft);
+}
+
+.hero-description strong {
+    color: var(--ivory);
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.btn {
+    border-radius: 0;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: var(--bronze);
+    border-color: var(--bronze);
+    color: var(--ink);
+}
+
+.btn-primary:hover {
+    background: var(--ivory);
+    border-color: var(--ivory);
+}
+
+.btn-secondary {
+    color: var(--ivory);
+    border-color: var(--line-ink);
+}
+
+.btn-secondary:hover {
+    background: var(--aubergine-soft);
+    border-color: var(--lavender-dust);
+}
+
+.image-wrapper {
+    border-color: var(--line-ink);
+    box-shadow: 1.1rem 1.1rem 0 rgba(89, 102, 80, 0.5);
+}
+
+.hero-img {
+    filter: saturate(0.72) sepia(0.14) contrast(1.04);
+}
+
+.identification-section,
+.about-section,
+.audience-section,
+.education-section,
+.process-section,
+.faq-section,
+.final-cta-section {
+    background-color: var(--ink);
+    color: var(--ivory);
+}
+
+.identification-section,
+.about-section,
+.education-section,
+.process-section,
+.faq-section,
+.final-cta-section {
+    padding-top: clamp(6rem, 12vw, 11rem);
+    padding-bottom: clamp(6rem, 12vw, 11rem);
+}
+
+.section-title,
+.identification-section .section-title,
+.audience-section .section-title,
+.education-section .section-title,
+.process-section .section-title,
+.faq-section .section-title {
+    color: var(--ivory);
+    font-size: clamp(2.2rem, 4vw, 4.3rem);
+    line-height: 1.02;
+    letter-spacing: 0;
+}
+
+.section-intro,
+.card-description,
+.edu-desc,
+.step-text {
+    color: var(--ivory-soft);
+}
+
+.editorial-cards-grid {
+    grid-template-columns: repeat(5, 1fr);
+    border-top-color: var(--line-ink);
+    border-bottom-color: var(--line-ink);
+}
+
+.editorial-card {
+    min-height: 18rem;
+    padding: 2rem 1.5rem 2.5rem;
+    background: transparent;
+    border: 0;
+    border-right: 1px solid var(--line-ink);
+}
+
+.editorial-card:hover,
+.audience-card:hover {
+    background-color: rgba(162, 141, 168, 0.08);
+}
+
+.card-text {
+    max-width: 13rem;
+    color: var(--ivory);
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.concept-section {
+    padding: clamp(6rem, 12vw, 11rem) 0;
+    background: var(--ivory);
+    color: var(--aubergine);
+}
+
+.concept-image-container {
+    display: none;
+}
+
+.concept-section .section-title,
+.concept-section .rich-text p,
+.concept-section .reflection-list li,
+.concept-section .highlight-quote {
+    color: var(--aubergine);
+}
+
+.concept-section .section-title {
+    max-width: 9ch;
+    font-size: clamp(3rem, 6vw, 6.5rem);
+}
+
+.concept-section .rich-text {
+    max-width: 34rem;
+}
+
+.concept-section .reflection-list {
+    border-top: 1px solid var(--line-ivory);
+    border-bottom: 1px solid var(--line-ivory);
+    padding: 1.2rem 0;
+}
+
+.concept-section .reflection-list li::before {
+    background-color: var(--bronze);
+    border-radius: 0;
+}
+
+.concept-section .highlight-quote {
+    border-left-color: var(--bronze);
+}
+
+.woman-center-section {
+    padding: clamp(7rem, 14vw, 13rem) 0;
+    background: var(--aubergine);
+    text-align: left;
+}
+
+.quote-banner {
+    max-width: 58rem;
+    margin-left: 16%;
+}
+
+.banner-title {
+    max-width: 12ch;
+    color: var(--ivory);
+    font-size: clamp(2.8rem, 6vw, 6rem);
+    line-height: 0.98;
+}
+
+.banner-lead {
+    max-width: 34rem;
+    color: var(--ivory-soft);
+}
+
+.separator-line {
+    margin-left: 0;
+    background: var(--bronze);
+}
+
+.services-preview-section,
+.services-section {
+    padding: clamp(6rem, 12vw, 11rem) 0;
+    background: var(--moss);
+}
+
+.services-preview-section .section-header {
+    max-width: 32rem;
+    margin-left: 0;
+    text-align: left;
+}
+
+.services-preview-section .section-title,
+.services-section .section-title,
+.services-page-section .section-title {
+    color: var(--ivory);
+}
+
+.services-preview-section .section-intro,
+.services-page-section .section-intro {
+    color: var(--ivory-soft);
+}
+
+.editorial-services-list {
+    max-width: 52rem;
+    margin-top: 4rem;
+    margin-left: auto;
+}
+
+.editorial-service-link {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.4rem 0;
+    border-top: 1px solid rgba(231, 220, 201, 0.3);
+    color: var(--ivory);
+    transition: padding 350ms var(--editorial-ease), color 250ms ease;
+}
+
+.editorial-service-link:last-child {
+    border-bottom: 1px solid rgba(231, 220, 201, 0.3);
+}
+
+.editorial-service-link:hover {
+    padding-left: 1rem;
+    color: var(--ivory);
+}
+
+.editorial-service-number,
+.editorial-service-arrow {
+    color: var(--bronze);
+}
+
+.editorial-service-link strong,
+.editorial-service-link em {
+    display: block;
+}
+
+.editorial-service-link strong {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.8rem);
+    font-weight: 400;
+}
+
+.editorial-service-link em {
+    color: var(--ivory-soft);
+    font-family: var(--font-serif);
+}
+
+.audience-card,
+.edu-card,
+.step-card {
+    background: transparent;
+    border-color: var(--line-ink);
+}
+
+.audience-card .card-title,
+.edu-title,
+.step-title {
+    color: var(--ivory);
+}
+
+.language-section {
+    background: var(--aubergine-soft);
+    border-color: var(--line-ink);
+}
+
+.language-box {
+    max-width: 52rem;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.language-section .section-title,
+.language-section .language-text {
+    color: var(--ivory);
+}
+
+.language-section .language-text {
+    color: var(--ivory-soft);
+}
+
+.faq-section {
+    background: var(--ivory);
+}
+
+.faq-section .section-title,
+.faq-question,
+.faq-answer {
+    color: var(--aubergine);
+}
+
+.faq-item {
+    background: transparent;
+    border-color: var(--line-ivory);
+}
+
+.faq-question:hover {
+    background: rgba(37, 28, 43, 0.06);
+}
+
+.final-card {
+    max-width: 58rem;
+    padding: clamp(3rem, 8vw, 7rem) clamp(1.5rem, 7vw, 6rem);
+    background: var(--aubergine);
+    border-color: var(--line-ink);
+    box-shadow: none;
+    text-align: left;
+}
+
+.final-title {
+    max-width: 15ch;
+    color: var(--ivory);
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    line-height: 1;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+    color: var(--ivory);
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border-color: var(--line-ink);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(203, 188, 167, 0.6);
+}
+
+.site-footer {
+    background: var(--aubergine);
+    border-top: 1px solid var(--line-ink);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 8rem;
+    }
+
+    .hero-grid,
+    .concept-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-title {
+        max-width: 8ch;
+        font-size: clamp(3.4rem, 16vw, 5.4rem);
+    }
+
+    .hero-media {
+        width: calc(100% - 1rem);
+        margin-left: auto;
+    }
+
+    .editorial-cards-grid {
+        grid-template-columns: 1fr;
+        border-bottom: 0;
+    }
+
+    .editorial-card {
+        min-height: auto;
+        padding: 1.5rem 0 2rem;
+        border-right: 0;
+        border-bottom: 1px solid var(--line-ink);
+    }
+
+    .card-text {
+        max-width: 19rem;
+        margin-top: 1.5rem;
+    }
+
+    .quote-banner,
+    .language-box {
+        margin-left: 0;
+    }
+
+    .concept-section .section-title {
+        max-width: 11ch;
+    }
+
+    .editorial-services-list {
+        margin-top: 3rem;
+    }
+
+    .editorial-service-link {
+        grid-template-columns: 2rem 1fr auto;
+        gap: 0.8rem;
+    }
+
+    .editorial-service-link strong {
+        font-size: 1.7rem;
+    }
+
+    .final-card {
+        padding: 3rem 1.5rem;
     }
 }
 
