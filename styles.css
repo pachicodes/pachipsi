@@ -666,8 +666,8 @@ img {
 .language-section {
     padding: 6rem 0;
     background-color: var(--color-bg-alt);
-    border-top: 1px solid rgba(140, 123, 151, 0.1);
-    border-bottom: 1px solid rgba(140, 123, 151, 0.1);
+    border-top: 1px solid rgba(116, 98, 127, 0.2);
+    border-bottom: 1px solid rgba(116, 98, 127, 0.2);
 }
 
 .language-box {
@@ -828,7 +828,7 @@ details[open] .faq-question .icon.chevron {
     font-family: var(--font-sans);
     font-size: 0.95rem;
     background-color: var(--color-bg-light);
-    border: 1px solid rgba(140, 123, 151, 0.25);
+    border: 1px solid rgba(116, 98, 127, 0.3);
     border-radius: 2px;
     color: var(--color-text-main);
     transition: var(--transition-smooth);
@@ -904,11 +904,11 @@ details[open] .faq-question .icon.chevron {
 }
 
 .footer-copy {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(230, 221, 204, 0.14);
     padding-top: 2rem;
     width: 100%;
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(230, 221, 204, 0.58);
 }
 
 .footer-copy .disclaimer {
@@ -998,7 +998,7 @@ details[open] .faq-question .icon.chevron {
 
 /* --- INSPO PALETTE OVERRIDES --- */
 .site-header {
-    background-color: rgba(80, 64, 97, 0.94);
+    background-color: rgba(23, 21, 28, 0.94);
     border-bottom-color: rgba(215, 195, 155, 0.18);
 }
 
@@ -1037,7 +1037,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, var(--color-purple-dark) 0%, var(--color-purple-deep) 64%, #75618A 100%);
+    background: linear-gradient(135deg, var(--color-purple-dark) 0%, var(--color-purple-deep) 64%, var(--color-lavender-soft) 100%);
 }
 
 .hero-title,
@@ -1066,7 +1066,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(194, 179, 201, 0.18);
+    background-color: rgba(116, 98, 127, 0.22);
 }
 
 .concept-section,
@@ -1075,7 +1075,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .language-section {
-    background: linear-gradient(115deg, var(--color-sage-deep) 0%, #505B50 58%, var(--color-bg-alt) 100%);
+    background: linear-gradient(115deg, var(--color-sage-deep) 0%, var(--color-sage-subtle) 58%, var(--color-bg-alt) 100%);
 }
 
 .concept-section .section-title,
@@ -1112,8 +1112,8 @@ details[open] .faq-question .icon.chevron {
 .step-card,
 .faq-item,
 .final-card {
-    background-color: #F7EFE2;
-    border-color: rgba(110, 89, 102, 0.28);
+    background-color: var(--color-bg-card);
+    border-color: rgba(116, 98, 127, 0.3);
 }
 
 .audience-card {
@@ -1221,8 +1221,8 @@ details[open] .faq-question .icon.chevron {
 .editorial-cards-grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 0;
-    border-top: 1px solid rgba(80, 64, 97, 0.28);
-    border-bottom: 1px solid rgba(80, 64, 97, 0.28);
+    border-top: 1px solid rgba(116, 98, 127, 0.28);
+    border-bottom: 1px solid rgba(116, 98, 127, 0.28);
 }
 
 .editorial-card {
@@ -1230,7 +1230,7 @@ details[open] .faq-question .icon.chevron {
     padding: 2rem 1.4rem 2.4rem;
     background: transparent;
     border: 0;
-    border-right: 1px solid rgba(80, 64, 97, 0.28);
+    border-right: 1px solid rgba(116, 98, 127, 0.28);
     border-radius: 0;
 }
 
@@ -1260,7 +1260,7 @@ details[open] .faq-question .icon.chevron {
     box-shadow: none;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid rgba(80, 64, 97, 0.28);
+    border-bottom: 1px solid rgba(116, 98, 127, 0.28);
 }
 
 .audience-card:hover {
@@ -1328,7 +1328,7 @@ details[open] .faq-question .icon.chevron {
         min-height: auto;
         padding: 1.5rem 0;
         border-right: 0;
-        border-bottom: 1px solid rgba(80, 64, 97, 0.28);
+        border-bottom: 1px solid rgba(116, 98, 127, 0.28);
     }
 
     .editorial-card:last-child {
@@ -1351,17 +1351,17 @@ details[open] .faq-question .icon.chevron {
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0 3rem;
-        border-top: 1px solid rgba(80, 64, 97, 0.28);
+        border-top: 1px solid rgba(116, 98, 127, 0.28);
     }
 
     .audience-card {
         padding: 2.2rem 0 2.4rem;
         border-top: 0;
-        border-bottom: 1px solid rgba(80, 64, 97, 0.28);
+        border-bottom: 1px solid rgba(116, 98, 127, 0.28);
     }
 
     .audience-card:nth-child(odd) {
-        border-right: 1px solid rgba(80, 64, 97, 0.28);
+        border-right: 1px solid rgba(116, 98, 127, 0.28);
         padding-right: 2rem;
     }
 
@@ -1382,7 +1382,7 @@ details[open] .faq-question .icon.chevron {
 
     .edu-card:first-child,
     .step-card:first-child {
-        border-top: 1px solid rgba(80, 64, 97, 0.28);
+        border-top: 1px solid rgba(116, 98, 127, 0.28);
     }
 
     .concept-image-container {
@@ -1471,7 +1471,7 @@ details[open] .faq-question .icon.chevron {
 }
 
 .service-card.highlight-card {
-    background-color: #E8D9C5;
+    background-color: var(--color-bg-card);
     border-color: var(--color-gold-subtle);
 }
 
@@ -1486,7 +1486,7 @@ details[open] .faq-question .icon.chevron {
     font-family: var(--font-serif);
     font-size: 2.5rem;
     line-height: 1;
-    color: rgba(80, 64, 97, 0.16);
+    color: rgba(154, 127, 168, 0.3);
 }
 
 .service-card.wide-card {
@@ -1533,7 +1533,7 @@ details[open] .faq-question .icon.chevron {
 .service-boundary {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px dashed rgba(80, 64, 97, 0.2);
+    border-top: 1px dashed rgba(116, 98, 127, 0.2);
 }
 
 .service-tool-note strong,
@@ -1544,7 +1544,7 @@ details[open] .faq-question .icon.chevron {
 .service-subsection {
     margin-top: 1.5rem;
     padding-top: 1.25rem;
-    border-top: 1px solid rgba(80, 64, 97, 0.2);
+    border-top: 1px solid rgba(116, 98, 127, 0.2);
 }
 
 .service-subsection h4 {
@@ -1558,7 +1558,7 @@ details[open] .faq-question .icon.chevron {
     list-style: none;
     margin-top: auto;
     padding-top: 1rem;
-    border-top: 1px dashed rgba(80, 64, 97, 0.2);
+    border-top: 1px dashed rgba(116, 98, 127, 0.2);
 }
 
 .service-list li {
@@ -1587,7 +1587,7 @@ details[open] .faq-question .icon.chevron {
     gap: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(80, 64, 97, 0.2);
+    border-top: 1px solid rgba(116, 98, 127, 0.2);
 }
 
 .psycho-pillar {
@@ -1611,7 +1611,7 @@ details[open] .faq-question .icon.chevron {
 .choice-section {
     margin-top: 5rem;
     padding-top: 4rem;
-    border-top: 1px solid rgba(80, 64, 97, 0.2);
+    border-top: 1px solid rgba(116, 98, 127, 0.2);
 }
 
 .choice-section .section-header {
