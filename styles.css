@@ -5,30 +5,30 @@
 
 /* --- COLOR PALETTE & VARIABLES --- */
 :root {
-    /* Warm cream, charcoal and aged botanical tones */
-    --color-bg-light: #F1E8D8;
-    --color-bg-card: #E3D2BB;
-    --color-bg-alt: #514B59;
+    /* Dark, artistic and aged botanical tones */
+    --color-bg-light: #17151C;
+    --color-bg-card: #242126;
+    --color-bg-alt: #242126;
     
     /* Lavender & Purple Depths */
-    --color-lavender-soft: #C8B6D1;
-    --color-lavender-subtle: #A68BB6;
-    --color-purple-ash: #806791;
-    --color-purple-deep: #504061;
-    --color-purple-dark: #272030;
+    --color-lavender-soft: #74627F;
+    --color-lavender-subtle: #9A7FA8;
+    --color-purple-ash: #74627F;
+    --color-purple-deep: #9A7FA8;
+    --color-purple-dark: #17151C;
     
     /* Accent & Gold Touches */
-    --color-gold-subtle: #B59666;
-    --color-gold-light: #D7C39B;
-    --color-sage-subtle: #718060;
-    --color-sage-deep: #46543E;
-    --color-sage-soft: #B0BA9B;
+    --color-gold-subtle: #A68A58;
+    --color-gold-light: #C9B99F;
+    --color-sage-subtle: #71806C;
+    --color-sage-deep: #71806C;
+    --color-sage-soft: #A4AE94;
     
     /* Typography Colors */
-    --color-text-main: #302933;
-    --color-text-muted: #5D5661;
-    --color-text-light: #83788A;
-    --color-text-inverse: #F4EBDD;
+    --color-text-main: #E6DDCC;
+    --color-text-muted: #C9B99F;
+    --color-text-light: #A4AE94;
+    --color-text-inverse: #E6DDCC;
 
     /* Fonts */
     --font-serif: 'Lora', Georgia, serif;
@@ -36,8 +36,8 @@
 
     /* Transitions & Shadows */
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --shadow-soft: 0 12px 32px rgba(23, 19, 27, 0.12);
-    --shadow-hover: 0 20px 40px rgba(23, 19, 27, 0.2);
+    --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.28);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.42);
 }
 
 /* --- RESET & BASE STYLES --- */
