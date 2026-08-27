@@ -62,27 +62,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Active Section Link Highlighting on Scroll
+    // Active Section Link Highlighting
     const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-        const scrollY = window.pageYOffset;
+    if ('IntersectionObserver' in window) {
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const sectionId = entry.target.getAttribute('id');
+                const sectionLinks = document.querySelectorAll('.nav-list a[href*=' + sectionId + ']');
 
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 120;
-            const sectionId = current.getAttribute('id');
+                sectionLinks.forEach(link => {
+                    link.classList.toggle('active', entry.isIntersecting);
+                });
+            });
+        }, { rootMargin: '-35% 0px -55% 0px' });
 
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelectorAll('.nav-list a[href*=' + sectionId + ']').forEach(a => {
-                    a.classList.add('active');
-                });
-            } else {
-                document.querySelectorAll('.nav-list a[href*=' + sectionId + ']').forEach(a => {
-                    a.classList.remove('active');
-                });
-            }
-        });
-    });
+        sections.forEach(section => sectionObserver.observe(section));
+    }
 });
 
 // Contact Form Handler Simulation
