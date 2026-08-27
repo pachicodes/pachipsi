@@ -1792,6 +1792,26 @@ details[open] .faq-question .icon.chevron {
     border-color: var(--color-gold-light);
 }
 
+.services-page-section .services-grid .service-card:nth-child(1) {
+    order: 1;
+}
+
+.services-page-section .services-grid .service-card:nth-child(3) {
+    order: 2;
+}
+
+.services-page-section .services-grid .service-card:nth-child(2) {
+    order: 3;
+    grid-column: 1 / -1;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-page-section .services-grid .service-card:nth-child(4) {
+    order: 4;
+}
+
 .service-badge {
     border: 1px solid rgba(154, 127, 168, 0.36);
     background-color: rgba(116, 98, 127, 0.16);
@@ -1847,6 +1867,10 @@ details[open] .faq-question .icon.chevron {
 @media (max-width: 900px) {
     .psycho-pillars {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-page-section .services-grid .service-card:nth-child(2) {
+        width: 100%;
     }
 
     .psycho-pillar:nth-child(3) {
