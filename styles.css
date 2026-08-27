@@ -506,7 +506,7 @@ img {
 /* --- 4. A MULHER POR TRÁS DA MIGRAÇÃO --- */
 .woman-center-section {
     padding: 6rem 0;
-    background-color: var(--color-purple-deep);
+    background-color: var(--color-sage-deep);
     color: var(--color-text-inverse);
     text-align: center;
 }
@@ -529,7 +529,7 @@ img {
 
 .banner-lead {
     font-size: 1.2rem;
-    color: var(--color-lavender-soft);
+    color: var(--color-text-inverse);
     line-height: 1.7;
     font-weight: 300;
 }
@@ -597,7 +597,7 @@ img {
 .narrative-placeholder-box {
     margin-top: 2.5rem;
     padding: 1.8rem;
-    background-color: rgba(230, 224, 236, 0.4);
+    background-color: rgba(113, 128, 108, 0.18);
     border: 1px dashed var(--color-purple-ash);
     border-radius: 4px;
 }
@@ -618,7 +618,7 @@ img {
 }
 
 .about-accent-card {
-    background-color: var(--color-purple-deep);
+    background-color: var(--color-sage-deep);
     color: var(--color-text-inverse);
     padding: 3.5rem 2.5rem;
     border-radius: 2px;
