@@ -1476,6 +1476,15 @@ body {
     font-size: clamp(3rem, 6vw, 6.5rem);
 }
 
+.concept-grid {
+    display: block;
+}
+
+.concept-content {
+    max-width: 52rem;
+    margin-left: 18%;
+}
+
 .concept-section .rich-text {
     max-width: 34rem;
 }
@@ -1770,6 +1779,10 @@ body {
 
     .quote-banner,
     .language-box {
+        margin-left: 0;
+    }
+
+    .concept-content {
         margin-left: 0;
     }
 
