@@ -9,7 +9,7 @@
     --moss: #596650;
     --bronze: #9a7656;
     --line-dark: rgba(231, 220, 201, 0.2);
-    --line-light: rgba(39, 29, 46, 0.2);
+    --line-light: rgba(231, 220, 201, 0.2);
     --sans: 'Trebuchet MS', system-ui, sans-serif;
     --serif: Georgia, 'Times New Roman', serif;
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -80,7 +80,6 @@ img { display: block; max-width: 100%; height: auto; }
 .hero-section { position: relative; display: flex; align-items: center; min-height: min(860px, 100dvh); padding: 7rem 0 4rem; overflow: hidden; background: var(--ink); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr); align-items: center; gap: clamp(3rem, 9vw, 9rem); }
 .hero-content { position: relative; z-index: 1; max-width: 40rem; }
-.hero-content::before { display: block; margin-bottom: 2.2rem; color: var(--lavender); content: 'CADERNO DE TRAVESSIAS'; font-size: 0.68rem; letter-spacing: 0.2em; }
 .hero-content .tagline { display: block; margin-bottom: 1rem; color: var(--bronze); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
 .hero-title { max-width: 14ch; margin-bottom: 1.8rem; font-size: clamp(3.2rem, 6vw, 6rem); letter-spacing: 0; line-height: 0.96; }
 .name-highlight { color: var(--ivory); font-size: inherit; font-weight: 400; }
