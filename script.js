@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileCloseBtn = document.getElementById('mobileCloseBtn');
     const menuBackdrop = document.getElementById('menuBackdrop');
     const mainNav = document.getElementById('mainNav');
+    const brandLogo = document.querySelector('.brand-logo');
     const navLinks = document.querySelectorAll('.nav-link');
     let lastFocusedElement = null;
 
@@ -97,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         if (!mainNav) return;
         if (window.innerWidth > 768) {
+            if (mainNav.classList.contains('open') && mainNav.contains(document.activeElement)) {
+                brandLogo?.focus();
+            }
             mainNav.classList.remove('open');
             mainNav.setAttribute('aria-hidden', 'false');
             menuBackdrop?.classList.remove('is-visible');
