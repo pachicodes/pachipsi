@@ -10,8 +10,8 @@
     --bronze: #9a7656;
     --line-dark: rgba(231, 220, 201, 0.2);
     --line-light: rgba(39, 29, 46, 0.2);
-    --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-    --serif: 'Lora', Georgia, serif;
+    --sans: 'Trebuchet MS', system-ui, sans-serif;
+    --serif: Georgia, 'Times New Roman', serif;
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
     --content-width: 1140px;
 }
@@ -82,7 +82,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero-content { position: relative; z-index: 1; max-width: 40rem; }
 .hero-content::before { display: block; margin-bottom: 2.2rem; color: var(--lavender); content: 'CADERNO DE TRAVESSIAS'; font-size: 0.68rem; letter-spacing: 0.2em; }
 .hero-content .tagline { display: block; margin-bottom: 1rem; color: var(--bronze); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
-.hero-title { max-width: 8ch; margin-bottom: 1.8rem; font-size: clamp(3.6rem, 8vw, 7.5rem); letter-spacing: 0; line-height: 0.93; }
+.hero-title { max-width: 14ch; margin-bottom: 1.8rem; font-size: clamp(3.2rem, 6vw, 6rem); letter-spacing: 0; line-height: 0.96; }
 .name-highlight { color: var(--ivory); font-size: inherit; font-weight: 400; }
 .name-highlight em { color: var(--lavender); font-style: italic; }
 .title-sub { display: none; }
@@ -110,11 +110,11 @@ img { display: block; max-width: 100%; height: auto; }
 .card-text { max-width: 13rem; margin-top: 2.8rem; color: var(--ivory); font-family: var(--serif); font-size: 1.08rem; line-height: 1.5; }
 
 /* Ivory chapter */
-.concept-section { padding: clamp(6rem, 12vw, 11rem) 0; background: var(--ivory); color: var(--aubergine); }
+.concept-section { padding: clamp(6rem, 12vw, 11rem) 0; background: var(--aubergine); color: var(--ivory); }
 .concept-grid { display: block; }
 .concept-image-container { display: none; }
 .concept-content { max-width: 52rem; margin-left: 18%; }
-.concept-section .section-title, .concept-section .rich-text p, .concept-section .reflection-list li, .concept-section .highlight-quote { color: var(--aubergine); }
+.concept-section .section-title, .concept-section .rich-text p, .concept-section .reflection-list li, .concept-section .highlight-quote { color: var(--ivory); }
 .concept-section .section-subtitle { color: var(--bronze); }
 .concept-section .section-title { max-width: 9ch; font-size: clamp(3rem, 6vw, 6.5rem); }
 .concept-section .rich-text { max-width: 34rem; }
@@ -149,7 +149,8 @@ img { display: block; max-width: 100%; height: auto; }
 /* Audience, education and process */
 .audience-section, .education-section, .process-section { padding: clamp(6rem, 12vw, 11rem) 0; background: var(--ink); }
 .audience-section .section-header, .education-section .section-header, .process-section .section-header { max-width: 30rem; }
-.cards-grid, .education-grid, .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.cards-grid, .education-grid, .process-steps { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 0; }
+.education-grid .edu-card:last-child, .process-steps .step-card:last-child { grid-column: span 2; }
 .audience-card, .edu-card, .step-card { padding: 2.2rem 1.5rem 2.5rem; border-top: 1px solid var(--line-dark); border-right: 1px solid var(--line-dark); background: transparent; }
 .audience-card:last-child, .edu-card:last-child, .step-card:last-child { border-right: 0; }
 .audience-card:hover, .edu-card:hover, .step-card:hover { background: rgba(162, 141, 168, 0.08); }
@@ -167,8 +168,8 @@ img { display: block; max-width: 100%; height: auto; }
 .language-section .section-title { color: var(--ivory); }
 
 /* FAQ and contact */
-.faq-section { padding: clamp(6rem, 12vw, 11rem) 0; background: var(--ivory); }
-.faq-section .section-title, .faq-question, .faq-answer { color: var(--aubergine); }
+.faq-section { padding: clamp(6rem, 12vw, 11rem) 0; background: var(--aubergine); }
+.faq-section .section-title, .faq-question, .faq-answer { color: var(--ivory); }
 .accordion-wrapper { max-width: 52rem; }
 .faq-item { margin-bottom: 0.75rem; border: 1px solid var(--line-light); }
 .faq-question { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 1.4rem; font-family: var(--serif); font-size: 1.25rem; list-style: none; cursor: pointer; }
@@ -218,7 +219,8 @@ details[open] .chevron { transform: rotate(180deg); }
 .psycho-pillar { padding-left: 1rem; border-left: 1px solid var(--line-dark); }
 .psycho-pillar:first-child { padding-left: 0; border-left: 0; }
 .choice-section { margin-top: clamp(5rem, 10vw, 10rem); padding-top: clamp(3rem, 6vw, 6rem); border-top: 1px solid var(--line-dark); }
-.choice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.choice-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 0; }
+.choice-item:last-child { grid-column: span 2; }
 .choice-item { min-height: 11rem; padding: 1.5rem 1rem 1.5rem 0; border-top: 2px solid var(--bronze); }
 .choice-question { display: block; margin-bottom: 0.7rem; color: var(--ivory-soft); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .choice-item h3 { color: var(--ivory); font-size: 1.7rem; }
@@ -250,11 +252,13 @@ details[open] .chevron { transform: rotate(180deg); }
 .image-wrapper:hover, .image-wrapper:focus-within { transform: translate(-3px, -3px); box-shadow: 1.2rem 1.2rem 0 rgba(89, 102, 80, 0.58); }
 
 @media (max-width: 900px) {
+    .hero-title { max-width: 16ch; font-size: clamp(3rem, 6vw, 5rem); }
     .editorial-cards-grid { grid-template-columns: repeat(3, 1fr); }
     .psycho-pillars { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
+    body { overflow-x: clip; }
     html { scroll-behavior: auto; }
     .site-header { padding: 0.8rem 0; }
     .main-nav { position: fixed; top: 0; right: -100%; z-index: 1001; display: block; width: min(84vw, 320px); height: 100dvh; padding: 5rem 2rem 2rem; background: var(--aubergine); transition: right 350ms var(--ease); }
@@ -266,7 +270,7 @@ details[open] .chevron { transform: rotate(180deg); }
     .mobile-menu-close { position: absolute; top: 1.3rem; right: 1.3rem; }
     .hero-section { min-height: auto; padding-top: 7rem; }
     .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .hero-title { max-width: 8ch; font-size: clamp(3.5rem, 16vw, 5.5rem); }
+    .hero-title { max-width: 13ch; font-size: clamp(3.5rem, 16vw, 5.5rem); }
     .hero-media { width: calc(100% - 1rem); margin-left: auto; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn { width: 100%; }
@@ -288,6 +292,21 @@ details[open] .chevron { transform: rotate(180deg); }
     .services-page-section .service-card { grid-template-columns: 2rem 1fr; column-gap: 1rem; }
     .services-page-section .service-card-title { max-width: 11ch; }
     .psycho-pillars { grid-template-columns: 1fr; }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --ink: #222027;
+        --aubergine: #332a38;
+        --aubergine-soft: #44374a;
+        --ivory: #f1eadf;
+        --ivory-soft: #d5c9b8;
+        --lavender: #c0acc4;
+        --moss: #53604e;
+        --bronze: #c49a70;
+        --line-dark: rgba(241, 234, 223, 0.22);
+        --line-light: rgba(241, 234, 223, 0.22);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

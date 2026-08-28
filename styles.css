@@ -2755,7 +2755,7 @@ body {
 .audience-section .section-header::after,
 .education-section .section-header::after,
 .process-section .section-header::after {
-    content: '—';
+    content: '-';
     display: block;
     margin-top: 1.5rem;
     color: var(--color-gold-subtle);

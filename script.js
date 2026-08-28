@@ -51,6 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && mainNav && mainNav.classList.contains('open')) {
+            mainNav.classList.remove('open');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mainNav.setAttribute('aria-hidden', 'true');
+            mobileMenuBtn.focus();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (mainNav && window.innerWidth > 768) {
+            mainNav.classList.remove('open');
+            mainNav.setAttribute('aria-hidden', 'false');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
     // Close menu when clicking navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
