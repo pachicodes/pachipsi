@@ -67,6 +67,36 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 - [ ] Testar modo claro, modo escuro e movimento reduzido em uma execução dedicada.
 - [ ] Registrar pendências bloqueadas por dados externos.
 
+### Parte 8: performance crítica de imagens
+
+- [ ] Converter `eu.png` (2 MB), `dreamy.png` (2.5 MB) e `INSPO.png` (2.8 MB) para WebP com `<picture>` e fallback PNG.
+- [ ] Adicionar `<link rel="preload">` para a imagem hero (`eu.png` / versão WebP) — ela é o LCP.
+- [ ] Gerar variantes de tamanho com `srcset` e `sizes` para mobile, tablet e desktop.
+- [ ] Validar LCP, CLS e peso total da página após as conversões.
+
+### Parte 9: acessibilidade e conformidade legal
+
+- [ ] Adicionar link "Pular para o conteúdo" (skip-to-content) nas duas páginas.
+- [ ] Criar página de política de privacidade — o formulário coleta nome, e-mail e localização (LGPD / GDPR).
+- [ ] Criar página 404 customizada com navegação de retorno.
+- [ ] Validar contraste WCAG AA no modo claro (`prefers-color-scheme: light`) com ferramenta automatizada.
+- [ ] Revisar `aria-label` e indicadores visuais dos links que abrem aplicativo externo (WhatsApp).
+
+### Parte 10: conversão e credibilidade
+
+- [ ] Adicionar links de redes sociais no footer (Instagram profissional, se existir).
+- [ ] Preparar seção editorial de depoimentos / relatos anônimos (quando houver autorização).
+- [ ] Adicionar breadcrumbs em `servicos.html` para navegação de retorno visual.
+- [ ] Considerar indicador de fuso horário automático na seção de processo ou footer.
+- [ ] Adicionar analytics privacy-first (Plausible, Umami ou GA4) para entender a origem do tráfego.
+
+### Parte 11: crescimento e infraestrutura futura
+
+- [ ] Planejar seção de blog / "caderno de travessias" — o conceito já aparece no hero, mas não leva a conteúdo. Fortaleceria SEO orgânico e autoridade.
+- [ ] Avaliar versão mínima em inglês (ao menos boas-vindas e resumo) para buscas locais do público no exterior.
+- [ ] Criar `manifest.json` (PWA mínimo) para quem adiciona o site à home no celular.
+- [ ] Avaliar Service Worker para cache de assets estáticos e experiência offline mínima.
+
 ## Dependências em aberto
 
 Não serão inventados dados que ainda não foram fornecidos:
@@ -76,7 +106,11 @@ Não serão inventados dados que ainda não foram fornecidos:
 - preços, duração, frequência, disponibilidade ou plataforma;
 - instituição, supervisão e limites profissionais;
 - contatos e texto de orientação para emergências;
-- autorização, finalidade e versões originais dos assets adicionais.
+- autorização, finalidade e versões originais dos assets adicionais;
+- perfis de redes sociais profissionais;
+- depoimentos ou relatos autorizados por pacientes / mentoradas;
+- texto aprovado para política de privacidade;
+- decisão sobre ferramenta de analytics.
 
 ## Critérios de aceite
 
