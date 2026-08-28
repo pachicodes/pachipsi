@@ -29,16 +29,16 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 
 - [x] Remover o handler inline.
 - [x] Adicionar `name`, `autocomplete` e região `aria-live`.
-- [ ] Adicionar estados de envio, erro e sucesso do endpoint real.
+- [x] Adicionar estado de abertura do WhatsApp e fallback quando a nova aba for bloqueada.
 - [x] Nunca exibir sucesso sem resposta positiva do envio.
-- [ ] Integrar endpoint somente depois de definir o serviço e o e-mail reais.
+- [x] Integrar o contato com o WhatsApp informado.
 
-**Status:** parcial e honesta. A confirmação falsa foi removida; o envio real continua bloqueado até existir endpoint.
+**Status:** concluída via WhatsApp. A mensagem é preparada para revisão e envio manual pela pessoa no WhatsApp.
 
 ### Parte 3: conversão e informações de serviço
 
 - [ ] Adicionar CTA final em `servicos.html`.
-- [ ] Adicionar canal direto de contato após confirmação do e-mail profissional.
+- [x] Adicionar canal direto de contato pelo WhatsApp.
 - [x] Corrigir a ordem editorial dos serviços.
 - [ ] Publicar duração, frequência, plataforma e disponibilidade somente com dados confirmados.
 
@@ -92,5 +92,5 @@ Não serão inventados dados que ainda não foram fornecidos:
 - SEO técnico, dados estruturados, metadados sociais e estabilidade da imagem principal: concluídos antes deste plano.
 - Parte 0: concluída nesta etapa.
 - Parte 1: concluída e validada em mobile e desktop.
-- Parte 2: estrutura acessível concluída parcialmente; integração real pendente de endpoint.
+- Parte 2: concluída via WhatsApp, sem afirmar envio antes da confirmação manual.
 - Revisão de código: concluída; o bug de foco durante resize foi corrigido após a primeira revisão.

@@ -102,7 +102,7 @@
                     {
                         "@type": "Question",
                         "name": "Como funciona o primeiro contato?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Você pode enviar uma mensagem pelo formulário ou e-mail. A partir disso, conversamos brevemente para entender suas necessidades e alinhar os próximos passos com transparência." }
+                        "acceptedAnswer": { "@type": "Answer", "text": "Você pode preparar uma mensagem pelo formulário ou falar pelo WhatsApp. A partir disso, conversamos brevemente para entender suas necessidades e alinhar os próximos passos com transparência." }
                     }
                 ]
             }
@@ -555,7 +555,7 @@
                             <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
                         </summary>
                         <div class="faq-answer">
-                            <p>Você pode enviar uma mensagem pelo formulário ou e-mail. A partir disso, conversamos brevemente para entender suas necessidades e alinhar os próximos passos com transparência.</p>
+                            <p>Você pode preparar uma mensagem pelo formulário ou falar pelo WhatsApp. A partir disso, conversamos brevemente para entender suas necessidades e alinhar os próximos passos com transparência.</p>
                         </div>
                     </details>
                 </div>
@@ -572,7 +572,7 @@
                         Talvez esteja procurando um lugar onde possa finalmente fazer algumas perguntas.
                     </h2>
                     
-                    <form class="contact-form" id="contactForm" method="post">
+                    <form class="contact-form" id="contactForm" action="javascript:void(0)" method="post" aria-describedby="formSafety formConsentText">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Seu nome</label>
@@ -585,19 +585,24 @@
                         </div>
                         <div class="form-group">
                             <label for="location">Onde você vive atualmente? (País / Cidade)</label>
-                            <input type="text" id="location" name="location" autocomplete="country-name" placeholder="Ex: Estados Unidos, Portugal, Brasil...">
+                            <input type="text" id="location" name="location" autocomplete="off" placeholder="Ex: Estados Unidos, Portugal, Brasil...">
                         </div>
                         <div class="form-group">
                             <label for="message">Sua mensagem (opcional)</label>
                             <textarea id="message" name="message" rows="4" placeholder="Sinta-se à vontade para compartilhar um breve contexto..."></textarea>
                         </div>
-                        <p class="form-safety-note">Por segurança, não envie informações urgentes ou dados sensíveis por este formulário.</p>
+                        <p class="form-safety-note" id="formSafety">Por segurança, não envie informações urgentes ou dados sensíveis por este formulário.</p>
+                        <div class="form-consent">
+                            <input type="checkbox" id="whatsappConsent" name="whatsapp_consent" required>
+                            <label for="whatsappConsent" id="formConsentText">Concordo em preparar estes dados em uma mensagem do WhatsApp para revisar antes de enviar.</label>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-full">Quero conversar</button>
+                        <p class="whatsapp-direct">Prefere falar diretamente? <a href="https://wa.me/5514936180712" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a></p>
                     </form>
 
                     <div id="formStatus" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden>
-                        <p class="status-title">Envio ainda não configurado.</p>
-                        <p class="status-desc">Este formulário precisa de um canal de envio conectado antes de receber mensagens.</p>
+                        <p class="status-title">Mensagem preparada no WhatsApp.</p>
+                        <p class="status-desc">Revise os dados e toque em enviar no WhatsApp quando estiver pronta.</p>
                     </div>
                 </div>
             </div>

@@ -154,6 +154,29 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm && formStatus) {
         contactForm.addEventListener('submit', event => {
             event.preventDefault();
+            const consent = document.getElementById('whatsappConsent');
+            if (!consent?.checked) {
+                contactForm.reportValidity();
+                consent?.focus();
+                return;
+            }
+            const formData = new FormData(contactForm);
+            const whatsappMessage = [
+                'Olá, Pachi. Gostaria de conversar.',
+                '',
+                'Nome: ' + formData.get('name'),
+                'E-mail: ' + formData.get('email'),
+                'Onde vivo: ' + (formData.get('location') || 'Não informado'),
+                'Mensagem: ' + (formData.get('message') || 'Não informada')
+            ].join('\n');
+            const whatsappUrl = 'https://wa.me/5514936180712?text=' + encodeURIComponent(whatsappMessage);
+            const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+            if (!whatsappWindow) {
+                window.location.href = whatsappUrl;
+                return;
+            }
+
             formStatus.hidden = false;
             formStatus.focus();
         });
