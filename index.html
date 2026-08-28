@@ -137,9 +137,10 @@
                 <span class="brand-sub">Escuta Intercultural</span>
             </a>
 
-            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir menu de navegação" aria-controls="mainNav" aria-expanded="false">
                 <svg class="icon"><use href="#icon-menu"></use></svg>
             </button>
+            <button class="menu-backdrop" id="menuBackdrop" type="button" aria-label="Fechar menu"></button>
 
             <nav class="main-nav" id="mainNav">
                 <button class="mobile-menu-close" id="mobileCloseBtn" aria-label="Fechar menu">
@@ -571,31 +572,32 @@
                         Talvez esteja procurando um lugar onde possa finalmente fazer algumas perguntas.
                     </h2>
                     
-                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); showContactConfirmation();">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Seu nome</label>
-                                <input type="text" id="name" required placeholder="Como prefere ser chamada?">
+                                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Como prefere ser chamada?">
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail para contato</label>
-                                <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+                                <input type="email" id="email" name="email" autocomplete="email" required placeholder="seuemail@exemplo.com">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="location">Onde você vive atualmente? (País / Cidade)</label>
-                            <input type="text" id="location" placeholder="Ex: Estados Unidos, Portugal, Brasil...">
+                            <input type="text" id="location" name="location" autocomplete="country-name" placeholder="Ex: Estados Unidos, Portugal, Brasil...">
                         </div>
                         <div class="form-group">
                             <label for="message">Sua mensagem (opcional)</label>
-                            <textarea id="message" rows="4" placeholder="Sinta-se à vontade para compartilhar um breve contexto..."></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Sinta-se à vontade para compartilhar um breve contexto..."></textarea>
                         </div>
+                        <p class="form-safety-note">Por segurança, não envie informações urgentes ou dados sensíveis por este formulário.</p>
                         <button type="submit" class="btn btn-primary btn-full">Quero conversar</button>
                     </form>
 
-                    <div id="formSuccessMessage" class="form-success-msg" style="display: none;">
-                        <p class="success-title">Mensagem enviada com carinho.</p>
-                        <p class="success-desc">Obrigada pelo contato, Pachi retornará sua mensagem em breve.</p>
+                    <div id="formStatus" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden>
+                        <p class="status-title">Envio ainda não configurado.</p>
+                        <p class="status-desc">Este formulário precisa de um canal de envio conectado antes de receber mensagens.</p>
                     </div>
                 </div>
             </div>
