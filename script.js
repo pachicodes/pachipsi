@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const brandLogo = document.querySelector('.brand-logo');
     const navLinks = document.querySelectorAll('.nav-link');
     let lastFocusedElement = null;
+    let menuHadFocus = false;
 
     const getMenuFocusableElements = () => mainNav ? [...mainNav.querySelectorAll('a[href], button:not([disabled])')] : [];
 
@@ -44,7 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenuBtn?.setAttribute('aria-expanded', 'false');
         if (restoreFocus) (lastFocusedElement || mobileMenuBtn)?.focus();
         lastFocusedElement = null;
+        menuHadFocus = false;
     };
+
+    mainNav?.addEventListener('focusin', () => {
+        menuHadFocus = true;
+    });
 
     if (mainNav) {
         mainNav.setAttribute('aria-hidden', window.innerWidth <= 768 ? 'true' : 'false');
@@ -108,7 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
             lastFocusedElement = null;
             return;
         }
-        mainNav.setAttribute('aria-hidden', mainNav.classList.contains('open') ? 'false' : 'true');
+        if (mainNav.classList.contains('open')) {
+            mainNav.setAttribute('aria-hidden', 'false');
+        } else {
+            if (menuHadFocus || mainNav.contains(document.activeElement)) mobileMenuBtn?.focus();
+            menuHadFocus = false;
+            mainNav.setAttribute('aria-hidden', 'true');
+        }
     });
 
     // Close menu when clicking navigation links

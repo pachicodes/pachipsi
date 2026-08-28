@@ -61,9 +61,10 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 
 ### Parte 7: revisão final
 
-- [ ] Revisar o diff completo com foco em bugs e regressões.
+- [x] Revisar o diff completo com foco em bugs e regressões.
 - [ ] Confirmar que nenhuma rota, ID, copy legal ou identidade foi alterada indevidamente.
-- [ ] Testar desktop, mobile, modo claro, modo escuro, movimento reduzido, teclado e formulário.
+- [x] Testar desktop, mobile, teclado e formulário sem endpoint.
+- [ ] Testar modo claro, modo escuro e movimento reduzido em uma execução dedicada.
 - [ ] Registrar pendências bloqueadas por dados externos.
 
 ## Dependências em aberto
@@ -92,3 +93,4 @@ Não serão inventados dados que ainda não foram fornecidos:
 - Parte 0: concluída nesta etapa.
 - Parte 1: concluída e validada em mobile e desktop.
 - Parte 2: estrutura acessível concluída parcialmente; integração real pendente de endpoint.
+- Revisão de código: concluída; o bug de foco durante resize foi corrigido após a primeira revisão.
