@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://pachiparra.com.br/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" type="image/webp" href="assets/eu.webp" imagesrcset="assets/eu-400w.webp 400w, assets/eu-640w.webp 640w, assets/eu-800w.webp 800w, assets/eu-1024w.webp 1024w, assets/eu.webp 1254w" imagesizes="(max-width: 768px) 100vw, 40vw">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -179,7 +180,10 @@
                 </div>
                 <div class="hero-media">
                     <div class="image-wrapper">
-                        <img src="assets/eu.png" alt="Retrato de Pachi Parra em uma paisagem urbana" class="hero-img" width="1254" height="1254" loading="eager" fetchpriority="high" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="assets/eu-400w.webp 400w, assets/eu-640w.webp 640w, assets/eu-800w.webp 800w, assets/eu-1024w.webp 1024w, assets/eu.webp 1254w" sizes="(max-width: 768px) 100vw, 40vw">
+                            <img src="assets/eu.png" alt="Retrato de Pachi Parra em uma paisagem urbana" class="hero-img" width="1254" height="1254" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
                         <div class="image-accent-border"></div>
                     </div>
                     <span class="hero-image-caption">Atendimento online para brasileiras no exterior</span>
