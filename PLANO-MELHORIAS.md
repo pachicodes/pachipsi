@@ -44,7 +44,8 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 
 ### Parte 4: confiança e responsabilidade clínica
 
-- [ ] Revisar formação, supervisão, escopo de atuação e limites por país.
+- [x] Criar página dedicada de formação, certificações e percurso teórico (`formacao.html`).
+- [x] Revisar formação, supervisão, escopo de atuação e limites por país.
 - [ ] Adicionar orientação para crise ou emergência somente com texto e contatos aprovados.
 
 ### Parte 5: mídia e performance
