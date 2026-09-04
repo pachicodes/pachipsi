@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.hero-content > *, .hero-media, section > .container > .section-header, '
         + '.concept-image-container, .concept-content, .quote-banner, .services-preview-link, '
         + '.editorial-card, .audience-card, .edu-card, .step-card, .service-card, '
-        + '.choice-item, .faq-item, .final-card, .contact-content, .contact-form'
+        + '.choice-item, .faq-item, .final-card, .contact-content, .contact-form, '
+        + '.triad-card, .credential-item, .transparency-banner'
     );
 
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
