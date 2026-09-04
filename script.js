@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         + '.concept-image-container, .concept-content, .quote-banner, .services-preview-link, '
         + '.editorial-card, .audience-card, .edu-card, .step-card, .service-card, '
         + '.choice-item, .faq-item, .final-card, .contact-content, .contact-form, '
-        + '.triad-card, .credential-item, .transparency-banner'
+        + '.triad-card, .credential-item, .certificate-card, .transparency-banner'
     );
 
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
