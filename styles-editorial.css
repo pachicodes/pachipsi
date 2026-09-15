@@ -72,7 +72,7 @@ img { display: block; max-width: 100%; height: auto; }
 .nav-list { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2rem); list-style: none; }
 .nav-link { position: relative; color: var(--ivory-soft); font-size: 0.82rem; }
 .nav-link::after { position: absolute; right: 0; bottom: -0.35rem; left: 0; height: 1px; background: var(--wine-hover); content: ''; transform: scaleX(0); transform-origin: right; transition: transform 250ms var(--ease); }
-.nav-link:hover, .nav-link.active { color: #f5e8dc; }
+.nav-link:hover, .nav-link.active { color: var(--ivory); }
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); transform-origin: left; }
 .nav-btn { padding: 0.45rem 0.9rem; border: 1px solid var(--wine); background: var(--wine); color: #fdfbf7 !important; font-weight: 500; transition: background-color 250ms ease, border-color 250ms ease, transform 250ms var(--ease); }
 .nav-btn::after { display: none; }
