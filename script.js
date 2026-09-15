@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         + '.editorial-card, .audience-card, .edu-card, .step-card, .service-card, '
         + '.choice-item, .faq-item, .final-card, .contact-content, .contact-form, '
         + '.triad-card, .credential-item, .certificate-card, .transparency-banner, '
-        + '.question-card, .integrative-card'
+        + '.question-card, .integrative-card, .theme-card'
     );
 
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
