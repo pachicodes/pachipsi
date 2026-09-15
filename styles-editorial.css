@@ -74,6 +74,9 @@ img { display: block; max-width: 100%; height: auto; }
 .nav-link::after { position: absolute; right: 0; bottom: -0.35rem; left: 0; height: 1px; background: var(--wine-hover); content: ''; transform: scaleX(0); transform-origin: right; transition: transform 250ms var(--ease); }
 .nav-link:hover, .nav-link.active { color: var(--ivory); }
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); transform-origin: left; }
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; border: 1px solid var(--line-dark); background: transparent; color: var(--ivory-soft); }
+.theme-toggle:hover { border-color: var(--wine-soft); color: var(--ivory); }
+.theme-toggle .icon { width: 1rem; height: 1rem; }
 .nav-btn { padding: 0.45rem 0.9rem; border: 1px solid var(--wine); background: var(--wine); color: #fdfbf7 !important; font-weight: 500; transition: background-color 250ms ease, border-color 250ms ease, transform 250ms var(--ease); }
 .nav-btn::after { display: none; }
 .nav-btn:hover { background: var(--wine-hover); border-color: var(--wine-hover); color: #ffffff !important; transform: translateY(-1px); }
@@ -433,29 +436,27 @@ body.lightbox-open { overflow: hidden; }
     .whatsapp-card-layout { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --ink: #f3ece1;
-        --aubergine: #e8dfd1;
-        --aubergine-soft: #ddd2c2;
-        --plum: #e8dfd1;
-        --plum-soft: #ddd2c2;
-        --ivory: #1f1b17;
-        --ivory-soft: #4a433c;
-        --accent: #982744;
-        --lavender: var(--accent);
-        --wine: #7A1830;
-        --wine-hover: #982744;
-        --wine-soft: #b34d62;
-        --wine-glow: rgba(122, 24, 48, 0.1);
-        --moss: #6f3040;
-        --teal: #2f5f68;
-        --bronze: #a84d58;
-        --gold: #982744;
-        --line-wine: rgba(122, 24, 48, 0.28);
-        --line-dark: rgba(31, 27, 23, 0.14);
-        --line-light: rgba(31, 27, 23, 0.14);
-    }
+html[data-theme="light"] {
+    --ink: #f3ece1;
+    --aubergine: #e8dfd1;
+    --aubergine-soft: #ddd2c2;
+    --plum: #e8dfd1;
+    --plum-soft: #ddd2c2;
+    --ivory: #1f1b17;
+    --ivory-soft: #4a433c;
+    --accent: #982744;
+    --lavender: var(--accent);
+    --wine: #7A1830;
+    --wine-hover: #982744;
+    --wine-soft: #b34d62;
+    --wine-glow: rgba(122, 24, 48, 0.1);
+    --moss: #6f3040;
+    --teal: #2f5f68;
+    --bronze: #a84d58;
+    --gold: #982744;
+    --line-wine: rgba(122, 24, 48, 0.28);
+    --line-dark: rgba(31, 27, 23, 0.14);
+    --line-light: rgba(31, 27, 23, 0.14);
 
     body { background-color: var(--ink); color: var(--ivory); }
     .site-header { background: rgba(243, 236, 225, 0.94); }

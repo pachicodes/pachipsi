@@ -3,6 +3,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.classList.add('motion-ready');
 
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('pachi-theme');
+    const setTheme = theme => {
+        const isLight = theme === 'light';
+        document.documentElement.dataset.theme = isLight ? 'light' : 'dark';
+        themeToggle?.setAttribute('aria-label', isLight ? 'Ativar tema escuro' : 'Ativar tema claro');
+        themeToggle?.setAttribute('title', isLight ? 'Ativar tema escuro' : 'Ativar tema claro');
+        themeToggle?.querySelector('use')?.setAttribute('href', isLight ? '#icon-sun' : '#icon-moon');
+    };
+
+    setTheme(savedTheme === 'light' ? 'light' : 'dark');
+    themeToggle?.addEventListener('click', () => {
+        const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        localStorage.setItem('pachi-theme', nextTheme);
+        setTheme(nextTheme);
+    });
+
     const motionTargets = document.querySelectorAll(
         '.hero-content > *, .hero-media, section > .container > .section-header, '
         + '.concept-image-container, .concept-content, .quote-banner, .services-preview-link, '
