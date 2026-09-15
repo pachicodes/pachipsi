@@ -13,7 +13,7 @@
     --ivory-soft: #CFC3AB;
     --accent: var(--wine-hover);
     --lavender: var(--accent);
-    --moss: #176775;
+    --moss: #5a1d2d;
     --teal: #176775;
     --bronze: #c46b72;
     --gold: #d4828a;
@@ -448,7 +448,7 @@ body.lightbox-open { overflow: hidden; }
         --wine-hover: #982744;
         --wine-soft: #b34d62;
         --wine-glow: rgba(122, 24, 48, 0.1);
-        --moss: #2f5f68;
+        --moss: #6f3040;
         --teal: #2f5f68;
         --bronze: #a84d58;
         --gold: #982744;
