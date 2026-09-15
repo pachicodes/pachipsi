@@ -26,19 +26,22 @@ const publicFiles = [
 async function processCasaDoSaber(inputPath, outputPath) {
   const image = sharp(inputPath);
   const { width, height } = await image.metadata();
-  const cropHeight = Math.floor(height * 0.72);
-  const cpfTop = Math.floor(height * 0.255);
-  const cpfHeight = Math.floor(height * 0.045);
+  const cropHeight = Math.floor(height * 0.66);
+  const cpfTop = Math.floor(height * 0.17);
+  const cpfHeight = Math.floor(height * 0.14);
 
   const redactSvg = Buffer.from(
     `<svg width="${width}" height="${cpfHeight}">
-      <rect width="100%" height="100%" fill="#f7f6f3"/>
+      <rect width="100%" height="100%" fill="#f1f0ec"/>
     </svg>`
   );
 
   await sharp(inputPath)
     .extract({ left: 0, top: 0, width, height: cropHeight })
-    .composite([{ input: redactSvg, top: cpfTop, left: 0 }])
+    .composite([
+      { input: redactSvg, top: cpfTop, left: 0 },
+      { input: redactSvg, top: cpfTop + Math.floor(cpfHeight * 0.45), left: 0 },
+    ])
     .png({ quality: 88, compressionLevel: 9 })
     .toFile(outputPath);
 }

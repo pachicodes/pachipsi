@@ -2,7 +2,7 @@
 
 ## Contexto
 
-O site é uma landing editorial estática para brasileiras no exterior, com CSS nativo, tema escuro editorial e uma página separada de serviços. A etapa de SEO técnico já foi implementada.
+O site é uma landing editorial estática para brasileiras no exterior, com CSS nativo, tema escuro editorial e páginas separadas de serviços, formação e certificados. A etapa de SEO técnico já foi implementada.
 
 As melhorias serão feitas em partes pequenas, com validação focada após cada etapa e uma revisão final de código.
 
@@ -21,7 +21,7 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 - [x] Devolver o foco ao botão de menu ao fechar.
 - [x] Fechar com `Escape`, backdrop e links.
 - [x] Manter o foco dentro do menu enquanto ele estiver aberto.
-- [x] Testar nas duas páginas, em desktop e mobile.
+- [x] Testar nas páginas principais, em desktop e mobile.
 
 **Status:** concluída. O resize e o foco foram revisados após a code review.
 
@@ -37,27 +37,33 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 
 ### Parte 3: conversão e informações de serviço
 
-- [ ] Adicionar CTA final em `servicos.html`.
+- [x] Adicionar CTA final em `servicos.html` (bloco de primeiro contato via WhatsApp).
 - [x] Adicionar canal direto de contato pelo WhatsApp.
 - [x] Corrigir a ordem editorial dos serviços.
+- [x] Tornar visíveis os recursos holísticos na home e em `servicos.html`, sem modalidades avulsas.
 - [ ] Publicar duração, frequência, plataforma e disponibilidade somente com dados confirmados.
 
 ### Parte 4: confiança e responsabilidade clínica
 
 - [x] Criar página dedicada de formação, certificações e percurso teórico (`formacao.html`).
+- [x] Criar página dedicada de certificados (`certificados.html`) com lightbox acessível.
 - [x] Revisar formação, supervisão, escopo de atuação e limites por país.
+- [x] Adicionar disclaimer clínico no rodapé (não substitui emergência nem tratamento médico/psicológico de urgência).
 - [ ] Adicionar orientação para crise ou emergência somente com texto e contatos aprovados.
 
 ### Parte 5: mídia e performance
 
 - [ ] Confirmar a finalidade de `dreamy.png`, `INSPO.png` e `intercultural_space.png`.
-- [ ] Gerar formatos modernos e `srcset` quando houver ferramenta e originais adequados.
+- [x] Gerar variantes WebP e `srcset` para a imagem hero (`eu.png`) em `index.html`.
+- [ ] Converter demais imagens pesadas (`dreamy.png`, `INSPO.png`) para WebP com `<picture>` e fallback PNG.
+- [ ] Otimizar imagens de certificado em WebP após validação visual das versões `_web` sem CPF.
 - [ ] Validar peso, dimensões, CLS e carregamento da imagem principal.
 
 ### Parte 6: manutenção e automação
 
 - [ ] Confirmar se `styles.css` é legado e pode ser arquivado ou removido.
 - [ ] Limpar seletores JavaScript residuais.
+- [x] Script de preparação de certificados (`scripts/prepare-certificates.mjs`) para versões públicas sem CPF.
 - [ ] Criar validações para HTML, CSS, JavaScript, links, JSON-LD e acessibilidade básica.
 
 ### Parte 7: revisão final
@@ -70,18 +76,19 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 
 ### Parte 8: performance crítica de imagens
 
-- [ ] Converter `eu.png` (2 MB), `dreamy.png` (2.5 MB) e `INSPO.png` (2.8 MB) para WebP com `<picture>` e fallback PNG.
-- [ ] Adicionar `<link rel="preload">` para a imagem hero (`eu.png` / versão WebP) — ela é o LCP.
-- [ ] Gerar variantes de tamanho com `srcset` e `sizes` para mobile, tablet e desktop.
-- [ ] Validar LCP, CLS e peso total da página após as conversões.
+- [x] Converter `eu.png` para WebP com `<picture>` e fallback PNG.
+- [x] Adicionar `<link rel="preload">` para a imagem hero (versão WebP).
+- [x] Gerar variantes de tamanho com `srcset` e `sizes` para mobile, tablet e desktop.
+- [ ] Converter `dreamy.png` e `INSPO.png` e validar LCP, CLS e peso total após todas as conversões.
 
 ### Parte 9: acessibilidade e conformidade legal
 
-- [ ] Adicionar link "Pular para o conteúdo" (skip-to-content) nas duas páginas.
-- [ ] Criar página de política de privacidade — o formulário coleta nome, e-mail e localização (LGPD / GDPR).
+- [ ] Adicionar link "Pular para o conteúdo" (skip-to-content) em todas as páginas.
+- [ ] Criar página de política de privacidade — contato via WhatsApp e e-mail tratam dados pessoais (LGPD / GDPR).
 - [ ] Criar página 404 customizada com navegação de retorno.
 - [ ] Validar contraste WCAG AA no modo claro (`prefers-color-scheme: light`) com ferramenta automatizada.
 - [ ] Revisar `aria-label` e indicadores visuais dos links que abrem aplicativo externo (WhatsApp).
+- [x] Remover links órfãos para `index.html#faq` e alinhar navegação entre páginas.
 
 ### Parte 10: conversão e credibilidade
 
@@ -90,28 +97,42 @@ As melhorias serão feitas em partes pequenas, com validação focada após cada
 - [ ] Adicionar breadcrumbs em `servicos.html` para navegação de retorno visual.
 - [ ] Considerar indicador de fuso horário automático na seção de processo ou footer.
 - [ ] Adicionar analytics privacy-first (Plausible, Umami ou GA4) para entender a origem do tráfego.
+- [ ] Avaliar FAQ na home (ex.: “preciso usar Reiki ou tarô?”) — removido da navegação até haver texto aprovado.
 
 ### Parte 11: crescimento e infraestrutura futura
 
-- [ ] Planejar seção de blog / "caderno de travessias" — o conceito já aparece no hero, mas não leva a conteúdo. Fortaleceria SEO orgânico e autoridade.
+- [ ] Planejar seção de blog / "caderno de travessias" — fortaleceria SEO orgânico e autoridade.
 - [ ] Avaliar versão mínima em inglês (ao menos boas-vindas e resumo) para buscas locais do público no exterior.
-- [ ] Criar `manifest.json` (PWA mínimo) para quem adiciona o site à home no celular.
-- [ ] Avaliar Service Worker para cache de assets estáticos e experiência offline mínima.
+- [ ] **Não priorizar agora:** PWA (`manifest.json`) e Service Worker — site institucional pequeno, baixo retorno imediato.
+
+### Parte 12: privacidade em mídia e certificados
+
+- [x] Nunca publicar CPF, RG ou QR de validação com dados pessoais nos certificados exibidos no site.
+- [x] Gerar versões `_web` em `assets/certificados/web/` para exibição pública.
+- [x] Remover duplicatas de arquivos na pasta `assets/certificados`.
+- [x] Lightbox acessível (foco, `Escape`, `aria-modal`) em vez de abrir originais com dados sensíveis.
 
 ## Dependências em aberto
 
 Não serão inventados dados que ainda não foram fornecidos:
 
 - endpoint ou serviço do formulário;
-- e-mail profissional;
 - preços, duração, frequência, disponibilidade ou plataforma;
-- instituição, supervisão e limites profissionais;
+- instituição, supervisão e limites profissionais detalhados;
 - contatos e texto de orientação para emergências;
-- autorização, finalidade e versões originais dos assets adicionais;
+- autorização, finalidade e versões originais dos assets adicionais (`dreamy.png`, `INSPO.png`, etc.);
 - perfis de redes sociais profissionais;
 - depoimentos ou relatos autorizados por pacientes / mentoradas;
 - texto aprovado para política de privacidade;
-- decisão sobre ferramenta de analytics.
+- decisão sobre ferramenta de analytics;
+- texto aprovado para FAQ na home.
+
+**Já disponíveis (não bloquear mais):**
+
+- e-mail profissional: `pachiparrapsi@gmail.com`;
+- WhatsApp e QR de contato;
+- copy dos recursos holísticos na home e em serviços;
+- galeria de certificados com versões públicas sem CPF.
 
 ## Critérios de aceite
 
@@ -121,6 +142,8 @@ Não serão inventados dados que ainda não foram fornecidos:
 4. Não há overflow em viewports móveis ou desktop.
 5. Modo claro, modo escuro e movimento reduzido continuam funcionais.
 6. A revisão final não encontra bugs críticos ou regressões introduzidas.
+7. Certificados exibidos no site não contêm CPF nem dados de validação com informação pessoal.
+8. Recursos holísticos aparecem de forma breve na home e com limites éticos claros em serviços.
 
 ## Histórico
 
@@ -129,3 +152,4 @@ Não serão inventados dados que ainda não foram fornecidos:
 - Parte 1: concluída e validada em mobile e desktop.
 - Parte 2: concluída via WhatsApp, sem afirmar envio antes da confirmação manual.
 - Revisão de código: concluída; o bug de foco durante resize foi corrigido após a primeira revisão.
+- Página `certificados.html`, recursos holísticos, disclaimer clínico, navegação alinhada e privacidade em certificados: concluídos em set/2026.
