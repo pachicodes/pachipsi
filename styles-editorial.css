@@ -288,7 +288,19 @@ details[open] .chevron { transform: rotate(180deg); }
 .certificates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 2rem; }
 .certificate-card { background: var(--aubergine); border: 1px solid var(--line-dark); border-top: 2px solid var(--bronze); display: flex; flex-direction: column; overflow: hidden; transition: transform 350ms var(--ease), border-color 350ms ease, box-shadow 350ms ease; }
 .certificate-card:hover { transform: translateY(-4px); border-color: var(--lavender); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); }
-.certificate-preview-link { display: block; position: relative; overflow: hidden; background: #000; }
+.certificate-preview-link { display: block; position: relative; overflow: hidden; background: #000; width: 100%; padding: 0; border: 0; cursor: pointer; font: inherit; text-align: left; color: inherit; }
+.certificates-preview-grid { margin-bottom: 2rem; }
+.certificates-preview-cta { text-align: center; }
+
+.certificate-lightbox { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 1.5rem; }
+.certificate-lightbox[hidden] { display: none; }
+.certificate-lightbox-backdrop { position: absolute; inset: 0; background: rgba(10, 8, 12, 0.88); }
+.certificate-lightbox-dialog { position: relative; z-index: 1; width: min(920px, 100%); max-height: calc(100dvh - 3rem); overflow: auto; padding: 1.25rem; background: var(--aubergine); border: 1px solid var(--line-dark); border-top: 2px solid var(--bronze); }
+.certificate-lightbox-close { position: absolute; top: 0.75rem; right: 0.75rem; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border: 1px solid var(--line-dark); background: var(--ink); color: var(--ivory); cursor: pointer; }
+.certificate-lightbox-close:hover, .certificate-lightbox-close:focus-visible { border-color: var(--lavender); color: var(--ivory); }
+.certificate-lightbox-figure { margin: 0; }
+.certificate-lightbox-image { display: block; width: 100%; height: auto; max-height: calc(100dvh - 8rem); object-fit: contain; background: #000; }
+.certificate-lightbox-caption { margin-top: 0.9rem; color: var(--ivory-soft); font-size: 0.88rem; line-height: 1.5; text-align: center; }
 .certificate-img-container { position: relative; width: 100%; aspect-ratio: 16 / 11; overflow: hidden; }
 .certificate-thumb { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 500ms var(--ease), opacity 300ms ease; }
 .certificate-card:hover .certificate-thumb { transform: scale(1.04); opacity: 0.85; }

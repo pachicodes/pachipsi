@@ -150,4 +150,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(section => sectionObserver.observe(section));
     }
+
+    // Certificate lightbox
+    const certificateLightbox = document.getElementById('certificateLightbox');
+    const certificateLightboxImage = document.getElementById('certificateLightboxImage');
+    const certificateLightboxCaption = document.getElementById('certificateLightboxCaption');
+    const certificateLightboxClose = document.getElementById('certificateLightboxClose');
+    const certificateTriggers = document.querySelectorAll('.certificate-preview-link[data-lightbox-src]');
+    let certificateLightboxTrigger = null;
+
+    const getCertificateLightboxFocusable = () => certificateLightbox
+        ? [...certificateLightbox.querySelectorAll('button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')]
+        : [];
+
+    const closeCertificateLightbox = ({ restoreFocus = true } = {}) => {
+        if (!certificateLightbox) return;
+        certificateLightbox.hidden = true;
+        certificateLightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('lightbox-open');
+        if (certificateLightboxImage) {
+            certificateLightboxImage.removeAttribute('src');
+            certificateLightboxImage.alt = '';
+        }
+        if (certificateLightboxCaption) certificateLightboxCaption.textContent = '';
+        if (restoreFocus) certificateLightboxTrigger?.focus();
+        certificateLightboxTrigger = null;
+    };
+
+    const openCertificateLightbox = (trigger) => {
+        if (!certificateLightbox || !certificateLightboxImage || !certificateLightboxCaption) return;
+        const src = trigger.getAttribute('data-lightbox-src');
+        const alt = trigger.getAttribute('data-lightbox-alt') || '';
+        if (!src) return;
+
+        certificateLightboxTrigger = trigger;
+        certificateLightboxImage.src = src;
+        certificateLightboxImage.alt = alt;
+        certificateLightboxCaption.textContent = alt;
+        certificateLightbox.hidden = false;
+        certificateLightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+        certificateLightboxClose?.focus();
+    };
+
+    certificateTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => openCertificateLightbox(trigger));
+    });
+
+    certificateLightboxClose?.addEventListener('click', () => closeCertificateLightbox());
+    certificateLightbox?.querySelectorAll('[data-lightbox-close]').forEach(element => {
+        element.addEventListener('click', () => closeCertificateLightbox());
+    });
+
+    document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || !certificateLightbox || certificateLightbox.hidden) return;
+        closeCertificateLightbox();
+    });
+
+    document.addEventListener('keydown', event => {
+        if (event.key !== 'Tab' || !certificateLightbox || certificateLightbox.hidden) return;
+        const focusableElements = getCertificateLightboxFocusable();
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        if (!firstElement || !lastElement) return;
+        if (event.shiftKey && document.activeElement === firstElement) {
+            event.preventDefault();
+            lastElement.focus();
+        } else if (!event.shiftKey && document.activeElement === lastElement) {
+            event.preventDefault();
+            firstElement.focus();
+        }
+    });
 });
